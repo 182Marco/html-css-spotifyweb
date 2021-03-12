@@ -9,7 +9,7 @@
   color: #080b12;
 }
 .third-color {
-    color: #282828;
+  color: #282828;
 }
 .fff-color {
   color: #fff;
@@ -38,7 +38,7 @@
 }
 
 .hover-third-color:hover {
-    color: #282828;
+  color: #282828;
 }
 .hover-fff-color:hover {
   color: #fff;
@@ -57,7 +57,7 @@
   background-color: #080b12;
 }
 .third-color-bg {
-    background-color: #282828;
+  background-color: #282828;
 }
 .fff-color-bg {
   background-color: #fff;
@@ -82,7 +82,7 @@
   background-color: #080b12;
 }
 .hover-third-color-bg:hover {
-    background-color: #282828;
+  background-color: #282828;
 }
 .hover-fff-color-bg:hover {
   background-color: #fff;
@@ -2059,6 +2059,9 @@ fastidiosi nei tag */
   width: 63%;
 }
 .w64 {
+  width: 64%;
+}
+.w65 {
   width: 65%;
 }
 .w66 {

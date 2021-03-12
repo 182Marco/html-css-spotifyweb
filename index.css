@@ -1,6 +1,6 @@
 /* AVVOLGITORE header e main */
 .wrap-header-and-main {
-  width: calc(100vw - 80px);
+  width: calc(100vw - 40px);
 }
 
 main {
