@@ -1,15 +1,59 @@
-/* AVVOLGITORE DI TUTTO MENO ASIDE */
-.wrap-all-but-aside {
-  width: calc(100% - 70px);
+/* AVVOLGITORE header e main */
+.wrap-header-and-main {
+  width: calc(100vw - 80px);
 }
-/* MAIN ALTO 100vh - e footer altri
-100px li ha di padding per staccarsi
-dall'header che è fissato in modo absolute*/
+
 main {
-  height: calc(100% - 100px);
 }
 
 header {
-  width: calc(100vw - 70px);
-  opacity: 0.4;
+  /* opacity: 0.9; */
+}
+
+@media screen and (min-width: 601px) {
+  .wrap-header-and-main {
+    width: calc(100vw - 175px);
+  }
+  aside.black-color-bg {
+    width: 200px;
+  }
+  header::after {
+    background: red;
+    content: 'siamo in s';
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 10vw;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  header::after {
+    background: green;
+    content: 'siamo in m';
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 10vw;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header::after {
+    background: dodgerblue;
+    content: 'siamo in l';
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 10vw;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
 }

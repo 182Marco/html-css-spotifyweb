@@ -6,7 +6,10 @@
   color: #141922;
 }
 .secondary-color {
-  color: #282828;
+  color: #080b12;
+}
+.third-color {
+    color: #282828;
 }
 .fff-color {
   color: #fff;
@@ -31,9 +34,12 @@
   color: #141922;
 }
 .hover-secondary-color:hover {
-  color: #282828;
+  color: #080b12;
 }
 
+.hover-third-color:hover {
+    color: #282828;
+}
 .hover-fff-color:hover {
   color: #fff;
 }
@@ -48,7 +54,10 @@
   background-color: #141922;
 }
 .secondary-color-bg {
-  background-color: #282828;
+  background-color: #080b12;
+}
+.third-color-bg {
+    background-color: #282828;
 }
 .fff-color-bg {
   background-color: #fff;
@@ -70,7 +79,10 @@
   background-color: #141922;
 }
 .hover-secondary-color-bg:hover {
-  background-color: #282828;
+  background-color: #080b12;
+}
+.hover-third-color-bg:hover {
+    background-color: #282828;
 }
 .hover-fff-color-bg:hover {
   background-color: #fff;
