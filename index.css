@@ -1,0 +1,8 @@
+/* AVVOLGITORE DI TUTTO MENO ASIDE */
+.wrap-all-but-aside {
+  width: calc(100% - 70px);
+}
+/* MAIN ALTO 100vh - header e footer*/
+main {
+  height: calc(100% - 200px);
+}
