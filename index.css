@@ -16,9 +16,6 @@ m in su su mobile */
  none;
 }
 
-.upper-mobile-wrapper .upper-icon-from-m li:first-child {
-  border-left: 3px solid #a1ed2e;
-}
 
 /* colore del più della playlist */
 aside .fa-plus {
@@ -38,6 +35,7 @@ header {
   }
   aside.black-color-bg {
     width: 200px;
+    padding-bottom: 0;
   }
   /* far sparire il menu da mobile */
   aside .icon-wrap-mobile {
@@ -51,6 +49,26 @@ header {
   .instalApProfile-wrap {
     display: flex;
     flex-direction: column;
+  }
+  .active-aside {
+    border-left: 3px solid #a1ed2e;
+  }
+  /* colorazione e hover di nuovaplaylist
+  come icona e suo testo (grigio leggermente
+  diverso dal grigio dei testi) */
+  aside .fa-plus{
+    background-color: #a3a3a3;
+  }
+  aside .fa-plus:hover .create-playlist{
+     color: #fff;
+  }
+  aside .create-playlist:hover .fa-plus{
+     background-color: #fff;
+  }
+  /* posizionamento del nome profilo */
+  h5.profile-name{
+    top: 43%;
+    left: 13%;
   }
 
   header::after {
