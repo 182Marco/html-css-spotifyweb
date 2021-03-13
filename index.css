@@ -1,6 +1,21 @@
+/* MOBILE FIRST */
+
 /* AVVOLGITORE header e main */
 .wrap-header-and-main {
   width: calc(100vw - 40px);
+}
+
+/* ASIDE */
+
+/* far sparire la parte da 
+m in su su mobile */
+.upper-mobile-wrapper,
+.instalApProfile-wrap {
+  display: none;
+}
+
+.upper-mobile-wrapper .upper-icon-from-m li:first-child {
+  border-left: 3px solid #a1ed2e;
 }
 
 main {
@@ -17,6 +32,16 @@ header {
   aside.black-color-bg {
     width: 200px;
   }
+  /* far sparire il menu da mobile */
+  aside .icon-wrap-mobile {
+    display: none;
+  }
+  /* far apparire il menu sopra m */
+  .upper-mobile-wrapper,
+  .instalApProfile-wrap {
+    display: flex;
+  }
+
   header::after {
     background: red;
     content: 'siamo in s';

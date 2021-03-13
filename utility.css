@@ -18,7 +18,7 @@
   color: #000;
 }
 .grey-txt {
-  color: #75787d;
+  color: #808080;
 }
 .dark-grey-txt {
   color: #606e8a;
@@ -58,6 +58,9 @@
 }
 .third-color-bg {
   background-color: #282828;
+}
+.grey-color-bg {
+  background-color: #808080;
 }
 .fff-color-bg {
   background-color: #fff;
