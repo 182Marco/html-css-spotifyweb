@@ -134,11 +134,11 @@
 .space-around {
   justify-content: space-around;
 }
-.justify-right {
-  justify-content: right;
+.justify-end {
+  justify-content: flex-end;
 }
-.justify-left {
-  justify-content: left;
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -506,7 +506,37 @@ fastidiosi nei tag */
 .border-rad30 {
   border-radius: 30px;
 }
-.border-rad50 {
+.border-rad31 {
+  border-radius: 31px;
+}
+.border-rad32 {
+  border-radius: 32px;
+}
+.border-rad33 {
+  border-radius: 33px;
+}
+.border-rad34 {
+  border-radius: 34px;
+}
+.border-rad35 {
+  border-radius: 35px;
+}
+.border-rad36 {
+  border-radius: 36px;
+}
+.border-rad37 {
+  border-radius: 37px;
+}
+.border-rad38 {
+  border-radius: 38px;
+}
+.border-rad39 {
+  border-radius: 39px;
+}
+.border-rad40 {
+  border-radius: 40px;
+}
+.border-rad {
   border-radius: 50%;
 }
 
@@ -540,7 +570,18 @@ fastidiosi nei tag */
 }
 
 /* UTILITIES font size dei testi */
-
+.font-s05rem {
+  font-size: 0.5rem;
+}
+.font-s055rem {
+  font-size: 0.55rem;
+}
+.font-s06rem {
+  font-size: 0.6rem;
+}
+.font-s065rem {
+  font-size: 0.65rem;
+}
 .font-s07rem {
   font-size: 0.7rem;
 }

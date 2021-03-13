@@ -13,20 +13,15 @@ m in su su mobile */
 .instalApProfile-wrap {
   display: none;
 }
- none;
-}
-
 
 /* colore del più della playlist */
 aside .fa-plus {
   background-color: #a3a3a3;
 }
 
-main {
-}
-
-header {
-  /* opacity: 0.9; */
+/* HEADER BOTTON */
+header button {
+  border-color: #fff;
 }
 
 @media screen and (min-width: 601px) {
@@ -56,17 +51,17 @@ header {
   /* colorazione e hover di nuovaplaylist
   come icona e suo testo (grigio leggermente
   diverso dal grigio dei testi) */
-  aside .fa-plus{
+  aside .fa-plus {
     background-color: #a3a3a3;
   }
-  aside .fa-plus:hover .create-playlist{
-     color: #fff;
+  aside .fa-plus:hover .create-playlist {
+    color: #fff;
   }
-  aside .create-playlist:hover .fa-plus{
-     background-color: #fff;
+  aside .create-playlist:hover .fa-plus {
+    background-color: #fff;
   }
   /* posizionamento del nome profilo */
-  h5.profile-name{
+  h5.profile-name {
     top: 43%;
     left: 13%;
   }
@@ -77,10 +72,13 @@ header {
     display: inline-block;
     font-size: 2rem;
     font-weight: 900;
-    margin-left: 10vw;
     color: #fff;
     padding: 20px;
     border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 27%;
   }
 }
 
@@ -91,10 +89,13 @@ header {
     display: inline-block;
     font-size: 2rem;
     font-weight: 900;
-    margin-left: 10vw;
     color: #fff;
     padding: 20px;
     border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 27%;
   }
 }
 
@@ -105,9 +106,12 @@ header {
     display: inline-block;
     font-size: 2rem;
     font-weight: 900;
-    margin-left: 10vw;
     color: #fff;
     padding: 20px;
     border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 27%;
   }
 }
