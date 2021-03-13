@@ -28,22 +28,47 @@
             <div
               class="icon-wrap-mobile w100 h130px flex-y space-between align-items-center"
             >
-              <img src="img/logo-small.svg" alt="logo" class="w65" />
-              <img src="img/home.svg" alt="home" class="w65" />
-              <img src="img/search.svg" alt="search" class="w65" />
-              <img src="img/libreria.svg" alt="libreria" class="w65" />
+              <ul class="no-list-style">
+                <li>
+                  <a href="" class="flex justify-center">
+                    <img src="img/logo-small.svg" alt="logo" class="w65"
+                  /></a>
+                </li>
+                <li>
+                  <a href="" class="flex justify-center">
+                    <img src="img/home.svg" alt="home" class="w65 my-10"
+                  /></a>
+                </li>
+                <li>
+                  <a href="" class="flex justify-center">
+                    <img src="img/search.svg" alt="logo" class="w65 mb-10"
+                  /></a>
+                </li>
+                <li>
+                  <a href="" class="flex justify-center">
+                    <img src="img/libreria.svg" alt="logo" class="w65"
+                  /></a>
+                </li>
+              </ul>
             </div>
             <!-- icone in basso -->
-            <div
-              class="icon-wrap-mobile w100 h68px flex-y space-between align-items-center"
+            <ul
+              class="no-list-style icon-wrap-mobile w100 h68px flex-y space-between align-items-center"
             >
-              <img src="img/download.svg" alt="arrow-down" class="w20px" />
-              <div
-                class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
-              >
-                <img src="img/profile.svg" alt="profile" class="w20px" />
-              </div>
-            </div>
+              <li>
+                <a href="">
+                  <img src="img/download.svg" alt="arrow-down" class="w20px"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
+                >
+                  <img src="img/profile.svg" alt="profile" class="w20px" />
+                </a>
+              </li>
+            </ul>
             <!-- MENU IN VERSIONE DA SCHERMI MD IN SU -->
             <div class="upper-mobile-wrapper flex-y space-between h100 pt-8">
               <!-- logo da m in su -->
@@ -55,7 +80,7 @@
                 class="logoHomePlaylist-wraper h92 align-items-center"
                 style="border: 1px solid blue"
               >
-                <!-- lista icone da me in su -->
+                <!-- lista icone da m in su -->
                 <ul
                   class="upper-icon-from-m no-list-style w100 pt-17"
                   style="border: 0px solid yellow"
@@ -102,7 +127,9 @@
                 </ul>
                 <!-- inizio lista playlist -->
                 <div class="playlist-wrapper w100 h8 mt-8">
-                  <h5 class="text-align-left uppercase fff-color pl-13 pb-8">
+                  <h5
+                    class="text-align-left uppercase fff-color pl-13 pb-8 font-s08rem"
+                  >
                     Playlist
                   </h5>
                   <ul class="">
@@ -110,58 +137,90 @@
                       <a
                         href=""
                         class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
-                        >Crea Playlist</a
+                      >
+                        <i
+                          class="fas fa-plus black-color font-s1e10rem p-7 hover-fff-color-bg"
+                        ></i>
+                        Crea Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                     <li>
                       <a
                         href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
                         >Nuova Playlist</a
                       >
                     </li>
                   </ul>
                 </div>
               </div>
+              <!-- icone sotto aside in versione da m in poi -->
               <div
                 class="instalApProfile-wrap h12"
                 style="border: 1px solid blue"
-              ></div>
+              >
+                <a href="" class="no-decorate grey-txt font-s08rem h10px">
+                  <img
+                    src="img/download.svg"
+                    alt="arrow-down"
+                    class="w15px vertical-align-sub mr-10"
+                  />Installa app
+                </a>
+                <div class="line h2px grey-color-bg w80 border-rad2 my-7"></div>
+
+                <div class="w100 pos-rel">
+                  <a
+                    href=""
+                    class="in-line-b pos-rel grey-color-bg w22px h22px flex-xy-center border-rad50 w100"
+                  >
+                    <img
+                      src="img/profile.svg"
+                      alt="profile"
+                      class="w15px center-of-abs"
+                    />
+                    <h5
+                      class="in-line-b no-decorate fff-color centerY-of-abs ml-6"
+                    >
+                      John Doe
+                    </h5>
+                  </a>
+                </div>
+              </div>
             </div>
           </aside>
           <div class="wrap-header-and-main h100 pos-rel">

@@ -13,9 +13,16 @@ m in su su mobile */
 .instalApProfile-wrap {
   display: none;
 }
+ none;
+}
 
 .upper-mobile-wrapper .upper-icon-from-m li:first-child {
   border-left: 3px solid #a1ed2e;
+}
+
+/* colore del più della playlist */
+aside .fa-plus {
+  background-color: #a3a3a3;
 }
 
 main {
@@ -36,10 +43,14 @@ header {
   aside .icon-wrap-mobile {
     display: none;
   }
-  /* far apparire il menu sopra m */
-  .upper-mobile-wrapper,
+  /* far apparire il menu sopra 
+  e sotto da dimensione m */
+  .upper-mobile-wrapper {
+    display: flex;
+  }
   .instalApProfile-wrap {
     display: flex;
+    flex-direction: column;
   }
 
   header::after {
