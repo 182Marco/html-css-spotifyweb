@@ -236,42 +236,70 @@
             <!-- MAIN-->
             <main class="h100 p-20 pt-110 primary-color-bg">
               <!-- contenitore titoli da in evidenza a scopri -->
-
               <ul
-                class="txt-center no-list-style font-s08rem w100 pb-8"
+                class="txt-center no-list-style font-s08rem font-w600 w100 pb-20"
                 style="border: 1px solid yellow"
               >
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >IN EVIDENZA</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >IN EVIDENZA
+                    <div class="active-page h3px w30px brand-color-bg"></div>
+                  </a>
                 </li>
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >PODCAST</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >PODCAST
+                    <div
+                      class="active-page h3px w30px brand-color-bg display-no"
+                    ></div>
+                  </a>
                 </li>
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >CLASSIFICHE</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >CLASSIFICHE
+                    <div
+                      class="active-page h3px w30px brand-color-bg display-no"
+                    ></div>
+                  </a>
                 </li>
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >GENERI E MOOD</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >GENERI E MOOD
+                    <div
+                      class="active-page h3px w30px brand-color-bg display-no"
+                    ></div>
+                  </a>
                 </li>
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >NUOVE USCITE</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >NUOVE USCITE
+                    <div
+                      class="active-page h3px w30px brand-color-bg display-no"
+                    ></div>
+                  </a>
                 </li>
                 <li class="in-line-b p-7">
-                  <a href="" class="no-decorate grey-txt hover-fff-color"
-                    >SCOPRI</a
-                  >
+                  <a
+                    href=""
+                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                    >SCOPRI
+                    <div
+                      class="active-page h3px w30px brand-color-bg display-no"
+                    ></div>
+                  </a>
                 </li>
               </ul>
+              <!-- parte con gallery dei brani vera e porpria -->
               <div class="overflow-y-auto h93">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -477,25 +505,44 @@
           <!-- parte alta del player -->
           <div class="flex justify-center">
             <!-- avvolgitore bottoni per centrarli nella parte alta -->
-            <div
-              class="player-btn-wrap flex space-between align-items-center w75 fff-color"
+            <ul
+              class="player-btn-wrap flex space-between align-items-center w75 no-list-style"
             >
-              <i class="fas fa-random"></i>
-              <i class="fas fa-caret-left font-s1e5rem pos-rel">
-                <!-- linea vertivale a sx del sinbolo per mandare indietro il brano -->
-                <span class="in-line-b pos-abs w3px h14px fff-color-bg"></span>
-              </i>
-              <div
-                class="wrap-play-btn flex-xy-center border-3px fff-color border-rad50 w30px h30px"
-              >
-                <i class="fas fa-play pl-3"></i>
-              </div>
-              <i class="fas fa-caret-right font-s1e5rem pos-rel">
-                <!-- linea vertivale a dx del sinbolo per mandare avanti il brano -->
-                <span class="in-line-b pos-abs w3px h14px fff-color-bg"></span>
-              </i>
-              <i class="fas fa-redo-alt"></i>
-            </div>
+              <li>
+                <a href="" class="fff-color"> <i class="fas fa-random"></i></a>
+              </li>
+              <li>
+                <a href="" class="fff-color">
+                  <i class="fas fa-caret-left font-s1e5rem pos-rel">
+                    <!-- linea vertivale a sx del sinbolo per mandare indietro il brano -->
+                    <span
+                      class="in-line-b pos-abs w3px h14px fff-color-bg"
+                    ></span> </i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="fff-color no-decorate">
+                  <div
+                    class="wrap-play-btn flex-xy-center border-3px fff-color border-rad50 w30px h30px"
+                  >
+                    <i class="fas fa-play pl-3"></i></div
+                ></a>
+              </li>
+              <li>
+                <a href="" class="fff-color">
+                  <i class="fas fa-caret-right font-s1e5rem pos-rel">
+                    <!-- linea vertivale a dx del sinbolo per mandare avanti il brano -->
+                    <span
+                      class="in-line-b pos-abs w3px h14px fff-color-bg"
+                    ></span> </i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="fff-color">
+                  <i class="fas fa-redo-alt"></i>
+                </a>
+              </li>
+            </ul>
           </div>
           <!-- barra di scorrimento del player -->
           <div
