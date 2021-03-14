@@ -1,3 +1,7 @@
+.wrap-all-but-footer {
+  height: calc(100vh - 90px);
+}
+
 /* MOBILE FIRST */
 /* AVVOLGITORE header e main */
 .wrap-header-and-main {
@@ -162,6 +166,9 @@ footer .fa-play:hover {
   }
   .time-bar {
     width: 77%;
+  }
+  .volum-wrap {
+    width: 25%;
   }
 
   header::after {
