@@ -20,6 +20,12 @@
 .grey-txt {
   color: #808080;
 }
+.grey-color {
+  color: #5a5a5a;
+}
+.grey-scorrimento-color {
+  color: #c1c1c1;
+}
 .dark-grey-txt {
   color: #606e8a;
 }
@@ -36,7 +42,6 @@
 .hover-secondary-color:hover {
   color: #080b12;
 }
-
 .hover-third-color:hover {
   color: #282828;
 }
@@ -60,7 +65,13 @@
   background-color: #282828;
 }
 .grey-color-bg {
+  background-color: #5a5a5a;
+}
+.light-grey-color-bg {
   background-color: #808080;
+}
+.grey-scorrimento-color-bg {
+  background-color: #c1c1c1;
 }
 .fff-color-bg {
   background-color: #fff;
@@ -536,10 +547,9 @@ fastidiosi nei tag */
 .border-rad40 {
   border-radius: 40px;
 }
-.border-rad {
+.border-rad50 {
   border-radius: 50%;
 }
-
 /* UTILITIES varie */
 .cursor-pointer {
   cursor: pointer;
@@ -3671,6 +3681,9 @@ fastidiosi nei tag */
   height: 63px;
 }
 .h64px {
+  height: 64px;
+}
+.h65px {
   height: 65px;
 }
 .h66px {
@@ -5285,6 +5298,9 @@ fastidiosi nei tag */
   padding-left: 30px;
 }
 .pl-31 {
+  padding-left: 31px;
+}
+.pl-32 {
   padding-left: 32px;
 }
 .pl-33 {
@@ -6022,6 +6038,9 @@ fastidiosi nei tag */
   padding-right: 30px;
 }
 .pr-31 {
+  padding-right: 31px;
+}
+.pr-32 {
   padding-right: 32px;
 }
 .pr-33 {

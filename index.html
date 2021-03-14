@@ -26,7 +26,7 @@
             <!-- MENU IN VERSIONE MOBILE -->
             <!-- icone in alto -->
             <div
-              class="icon-wrap-mobile w100 h130px flex-y space-between align-items-center"
+              class="icon-wrap-mobile w100 h130px space-between align-items-center"
             >
               <ul class="no-list-style">
                 <li>
@@ -218,10 +218,10 @@
           </aside>
           <div class="wrap-header-and-main h100 pos-rel">
             <header
-              class="flex justify-end align-items-center top0-left0-of-abs w100 h90px secondary-color-bg"
+              class="flex justify-end align-items-center top0-left0-of-abs w100 h90px secondary-color-bg p-10"
             >
               <button
-                class="fff-color border-1px secondary-color-bg font-s06rem border-rad27 pl-27 pr-30 pt-9 pb-9"
+                class="fff-color border-1px secondary-color-bg font-s06rem border-rad30 pl-32 pr-32 pt-11 pb-11"
               >
                 EFFETTUA L'UPGRADE
               </button>
@@ -372,8 +372,88 @@
             </main>
           </div>
         </div>
-        <footer class="h100px third-color-bg"></footer>
       </div>
+
+      <footer
+        class="h10 w100vw third-color-bg flex v space-between align-items-center p-10"
+      >
+        <!-- brano wraper -->
+        <div
+          class="brano-e-like-wrap flex align-items-center space-between w30"
+        >
+          <!-- contenitore immagine brano + sui testi -->
+          <div class="flex align-items-center">
+            <img
+              src="img/sinister.jpeg"
+              alt="sinister"
+              class="w35px vertical-middle"
+            />
+            <!-- contenitore testi del brano -->
+            <div class="pl-10">
+              <p class="fff-color font-w700">
+                <strong>Sinister</strong>
+              </p>
+              <p class="font-s08rem">brano nome</p>
+            </div>
+          </div>
+          <!-- contenitore like e cartella -->
+          <div
+            class="heartFolder-wrap flex-y space-between align-items-center h38px"
+          >
+            <i class="fas fa-heart display-no font-s1e1rem"></i>
+            <i class="far fa-heart mb-2 hover-fff-color font-s01e1rem"></i>
+            <i
+              class="far fa-folder font-s08rem hover-fff-color font-s1e1rem"
+            ></i>
+          </div>
+        </div>
+        <!-- player wraper -->
+        <div class="player-wrap flex-y space-between h50px w35">
+          <!-- parte alta del player -->
+          <div class="flex justify-center">
+            <div
+              class="player-btn-wrap flex space-between align-items-center w75 fff-color"
+            >
+              <i class="fas fa-random"></i>
+              <i class="fas fa-caret-left font-s1e5rem pos-rel"
+                ><span class="in-line-b pos-abs w3px h14px fff-color-bg"></span>
+              </i>
+              <div
+                class="flex-xy-center border-3px fff-color border-rad50 w30px h30px"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+              <i class="fas fa-caret-right font-s1e5rem pos-rel">
+                <span class="in-line-b pos-abs w3px h14px fff-color-bg"></span>
+              </i>
+              <i class="fas fa-redo-alt"></i>
+            </div>
+          </div>
+          <!-- barra di scorrimento del player -->
+          <div
+            class="fff-color flex space-between align-items-center font-s075rem grey-scorrimento-color"
+          >
+            <span>0:25</span>
+            <!-- barra di progressione -->
+            <div class="time-bar h3px w60 grey-color-bg border-rad5">
+              <!-- scorrimento -->
+              <div class="grey-scorrimento-color-bg h100 w20"></div>
+            </div>
+            <span>4:35</span>
+          </div>
+        </div>
+        <!-- volum wraper -->
+        <div class="volum-wrap flex space-between align-items-center w30">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <!-- barra di progressione -->
+          <div class="progression-audio h3px w30 grey-color-bg border-rad5">
+            <!-- scorrimento -->
+            <div class="grey-scorrimento-color-bg h100 w20"></div>
+          </div>
+        </div>
+      </footer>
       <!-- ASIDE -->
     </div>
   </body>
