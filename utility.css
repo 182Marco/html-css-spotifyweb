@@ -3855,7 +3855,7 @@ fastidiosi nei tag */
   height: 220px;
 }
 .h230px {
-  height: 145px;
+  height: 230px;
 }
 .h240px {
   height: 240px;
@@ -9714,10 +9714,6 @@ fastidiosi nei tag */
 /* columns  senza larghezza specificata
 si intende mobile first < 400*/
 
-[class^='col-'] {
-  float: left;
-}
-
 .col-1 {
   width: calc((100% / 12) * 1);
 }
@@ -9952,7 +9948,6 @@ si intende mobile first < 400*/
 }
 @media screen and (min-width: 1200px) {
   /* columns  in desktop*/
-
   .col-l-1 {
     width: calc((100% / 12) * 1);
   }
