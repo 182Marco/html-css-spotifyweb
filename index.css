@@ -1,29 +1,27 @@
 /* MOBILE FIRST */
-
 /* AVVOLGITORE header e main */
 .wrap-header-and-main {
   width: calc(100vw - 40px);
 }
-
 /* ASIDE */
-
 /* far sparire la parte da 
 m in su su mobile */
 .upper-mobile-wrapper,
 .instalApProfile-wrap {
   display: none;
 }
-
 /* colore del più della playlist */
 aside .fa-plus {
   background-color: #a3a3a3;
 }
-
 /* HEADER BOTTON */
 header button {
   border-color: #fff;
+  transition: scale 0.2s;
 }
-
+header button:hover {
+  scale: 1.05;
+}
 /* FOOTER */
 /* creare linea verticale
  in fondo alle freccie prima
@@ -35,6 +33,33 @@ footer .fa-caret-left span {
 footer .fa-caret-right span {
   bottom: 19%;
   left: 91%;
+}
+/* animazioni barre di scorrimeto e
+pallino che si crea in fondo */
+
+.time-bar:hover .scorrimento-tempo {
+  background-color: #a1ed2e;
+}
+.progression-audio:hover .scorrimento-audio {
+  background-color: #a1ed2e;
+}
+
+.time-bar:hover .pallino.tempo {
+  opacity: 1;
+}
+.progression-audio:hover .pallino.audio {
+  opacity: 1;
+}
+.pallino {
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .wrap-play-btn {
+  transition: scale 0.2s;
+}
+footer .wrap-play-btn:hover {
+  scale: 1.1;
 }
 
 /* **************** */

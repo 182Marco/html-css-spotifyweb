@@ -169,9 +169,11 @@
 .align-items-baseline {
   align-items: baseline;
 }
-
-.nowrap {
+.no-wrap {
   flex-wrap: nowrap;
+}
+.wrap {
+  flex-wrap: wrap;
 }
 .flex-grow {
   flex-grow: 1;
@@ -192,11 +194,14 @@
 .in-line-b {
   display: inline-block;
 }
+.display-block {
+  display: block;
+}
 .display-no {
   display: none;
 }
-.display-block {
-  display: block;
+.opacity0 {
+  opacity: 0;
 }
 @media screen and (min-width: 500px) {
   .tablet-display-no {
@@ -331,6 +336,10 @@ fastidiosi nei tag */
 }
 .no-border {
   border: 0;
+}
+/* creazione sottolineatura in hover  */
+.hover-underline:hover {
+  text-decoration: underline;
 }
 /* z-index */
 .z-index-10 {
