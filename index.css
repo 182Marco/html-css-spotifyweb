@@ -12,6 +12,52 @@
 main .row img {
   max-width: 180px;
 }
+
+main .titles-in-main {
+  bottom: 97%;
+  left: 0;
+}
+main .titles-in-main-row2,
+main .titles-in-main-row3 {
+  bottom: 102%;
+  left: 0;
+}
+
+main .layer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+main .layer.circled {
+  border-radius: 50%;
+}
+
+main .circle-of-play {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+}
+main .fa-play {
+  left: 57%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+}
+
+main .layer:hover .circle-of-play {
+  opacity: 1;
+}
+main .layer:hover .fa-play {
+  opacity: 1;
+}
+
+main .layer:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* ASIDE */
 /* far sparire la parte da 
 m in su su mobile */
@@ -29,7 +75,7 @@ header button {
   transition: scale 0.2s;
 }
 header button:hover {
-  scale: 1.05;
+  transform: scale(1.03);
 }
 /* FOOTER */
 /* creare linea verticale
@@ -68,7 +114,7 @@ footer .wrap-play-btn {
   transition: scale 0.2s;
 }
 footer .wrap-play-btn:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 footer .fa-play:hover {
   border: 0;
@@ -140,7 +186,7 @@ footer .fa-play:hover {
     width: 50%;
   }
 
-  header::after {
+  /* header::after {
     background: red;
     content: 'siamo in s';
     display: inline-block;
@@ -152,8 +198,7 @@ footer .fa-play:hover {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 27%;
-  }
+    left: 27%; */
 }
 
 @media screen and (min-width: 668px) {
@@ -167,7 +212,7 @@ footer .fa-play:hover {
     width: 25%;
   }
 
-  header::after {
+  /* header::after {
     background: green;
     content: 'siamo in m';
     display: inline-block;
@@ -180,7 +225,7 @@ footer .fa-play:hover {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 27%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -208,7 +253,7 @@ footer .fa-play:hover {
   .progression-audio {
     width: 60%;
   }
-  header::after {
+  /* header::after {
     background: dodgerblue;
     content: 'siamo in l';
     display: inline-block;
@@ -221,5 +266,5 @@ footer .fa-play:hover {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 27%;
-  }
+  } */
 }

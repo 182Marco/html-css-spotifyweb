@@ -234,9 +234,11 @@
             </header>
             <!-- ****** -->
             <!-- MAIN-->
-            <main class="h100 primary-color-bg pl-27 pr-27 pt-83">
+            <main class="h100 primary-color-bg pl-23 pr-10 pt-83">
               <!-- contenitore titoli da in evidenza a scopri -->
-              <ul class="txt-center no-list-style font-s08rem font-w600 w100">
+              <ul
+                class="txt-center no-list-style font-s08rem font-w600 w100 pb-17 z-index-20"
+              >
                 <li class="in-line-b p-7">
                   <a
                     href=""
@@ -298,134 +300,285 @@
               </ul>
               <!-- parte con gallery dei brani vera e porpria -->
               <div class="overflow-y-auto h93 pb-40">
-                <h2 class="fff-color">Recently Played</h2>
-                <div class="row flex wrap mt-10">
-                  <!-- brano 1 heavy metal -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/metal_lifting.jpg"
-                      alt="Heavy Metal"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      Heavy Metal
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">Subtitle</p>
+                <!-- titolo di riga Recently Played-->
+                <div class="row flex wrap pt-42">
+                  <!-- immagine 1 heavy metal -->
+                  <div class="col-l-2 col-m-3 col-6">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <h2
+                          class="titles-in-main pos-abs fff-color pb-23 w200px"
+                        >
+                          Recently Played
+                        </h2>
+                        <img
+                          src="img/metal_lifting.jpg"
+                          alt="Heavy Metal"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Heavy Metal
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- brano 2 stranger things -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/stranger.jpeg"
-                      alt="stranger things"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      Stranger Things, Vol. 1 (a Netflix original series
-                      Soundtrack
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">
-                      Kyle Dixon & Michael Stein
-                    </p>
+                  <!-- immagine 2 stanger e titoli -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/stranger.jpeg"
+                          alt="stranger things"
+                          class="w100"
+                        />
+                      </div>
+                      <h4
+                        class="fff-color font-s09rem my-4 txt-center cursor-pointer"
+                      >
+                        Stranger Things, Vol. 1 (a Netflix original series
+                        Soundtrack
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">
+                        Kyle Dixon & Michael Stein
+                      </p>
+                    </div>
                   </div>
-                  <!-- brano 3 A quiet Place -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/aquietplace.jpeg"
-                      alt="Heavy Metal"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      A quiet place
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">Subtitle</p>
+                  <!-- immagine 3 a quiet place -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/aquietplace.jpeg"
+                          alt="A quiet place"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        A quiet place
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- brano 4 split -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/split.jpeg"
-                      alt="Heavy Metal"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      Split
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">Subtitle</p>
+                  <!-- immagine 4 a slit -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img src="img/split.jpeg" alt="split" class="w100" />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Split
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- brano 5 A cure for wellness -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/cure.jpeg"
-                      alt="Heavy Metal"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      A cure for wellness
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">Subtitle</p>
+                  <!-- immagine 5 a cure for wellness -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/cure.jpeg"
+                          alt="a cure for weellness"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        A cure for wellness
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- brano 6 Sinister -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/sinister.jpeg"
-                      alt="Heavy Metal"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer">
-                      Sinister
-                    </h4>
-                    <p class="font-s08rem cursor-pointer mb-25">Subtitle</p>
+                  <!-- immagine 6 a cure sinister -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/sinister.jpeg"
+                          alt="sinister"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        sinister
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
                 </div>
-                <h2 class="fff-color">Creato per John Doe</h2>
-                <p class="font-s085rem mt-7 mb-25 mb-25">
-                  Più ascolti più accurati saranno i suggerimenti
-                </p>
-                <!-- seconda riga di foto e brani -->
-                <div class="row flex wrap">
-                  <!-- playlist 1 Release Radar -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/radar.jpeg"
-                      alt="Release Radar"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer mb-25">
-                      Release Radar
-                    </h4>
+                <!-- FILA CREATO PER JOHN DOE -->
+                <div class="row flex wrap pt-83">
+                  <!-- immagine 1 release radar -->
+                  <div class="col-l-2 col-m-3 col-6">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <!-- wrapper del titolo e sottotitolo seconda linea -->
+                        <div class="titles-in-main-row2 pos-abs w330px">
+                          <h2 class="fff-color">
+                            Creato per Jhon Doe
+                            <p class="pb-12 font-s08rem grey-txt">
+                              Più ascoliti, più accurati saranno i suggerimenti
+                            </p>
+                          </h2>
+                        </div>
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/radar.jpeg"
+                          alt="Release radar"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Release Radar
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- playlist 2 playlist Daily Mix -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/mixdaily.jpeg"
-                      alt="Daily Mix 1"
-                      class="object-fit-contain w90"
-                    />
-                    <h4 class="fff-color font-s09rem my-3 cursor-pointer mb-25">
-                      Daily Mix 1
-                    </h4>
+                  <!-- immagine 2 Daily Mix -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/mixdaily.jpeg"
+                          alt="daily mix"
+                          class="w100"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Daily Mix 1
+                      </h4>
+                    </div>
                   </div>
                 </div>
-                <!-- terza riga con foto tonde -->
-                <h2 class="fff-color">Artisti più popolari</h2>
-                <p class="font-s085rem mt-7 mb-20">
-                  Più ascolti più accurati saranno i suggerimenti
-                </p>
-                <div class="row flex wrap mb-20">
-                  <!-- playlist 1 Release Radar -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/youg.jpeg"
-                      alt="Release Radar"
-                      class="object-fit-contain w90 border-rad50"
-                    />
+                <!-- ARTISTI PIU' POPOLARI -->
+                <div class="row flex wrap pt-77">
+                  <!-- immagine 1 release radar -->
+                  <div class="col-l-2 col-m-3 col-6">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <!-- wrapper del titolo e sottotitolo terza linea -->
+                        <div class="titles-in-main-row3 pos-abs w330px">
+                          <h2 class="fff-color">
+                            Artisti più popolari
+                            <p class="pb-12 font-s08rem grey-txt">
+                              Più ascoliti, più accurati saranno i suggerimenti
+                            </p>
+                          </h2>
+                        </div>
+                        <div class="layer circled pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/youg.jpeg"
+                          alt="young Lana Del Ray"
+                          class="w100 border-rad50"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Lana del Rey
+                      </h4>
+                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                    </div>
                   </div>
-                  <!-- playlist 2 playlist Daily Mix -->
-                  <div class="col-l-2 col-m-3 col-6 txt-center cursor-pointer">
-                    <img
-                      src="img/einaudi.jpeg"
-                      alt="Daily Mix 1"
-                      class="object-fit-contain w90 border-rad50"
-                    />
+                  <!-- immagine 2 Daily Mix -->
+                  <div class="col-l-2 col-m-3 col-6 h50">
+                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                      <div class="img-wrap pos-rel">
+                        <div class="layer circled pos-abs">
+                          <div
+                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                          >
+                            <i
+                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                            ></i>
+                          </div>
+                        </div>
+                        <img
+                          src="img/einaudi.jpeg"
+                          alt="Einaudi"
+                          class="w100 border-rad50"
+                        />
+                      </div>
+                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                        Einaudi
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
