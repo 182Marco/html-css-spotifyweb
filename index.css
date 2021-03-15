@@ -13,6 +13,12 @@ main .row img {
   max-width: 180px;
 }
 
+/* evitare che i layer delle immagini fuoriescano
+di qualche pixel dalle immagini stesse */
+main img {
+  display: block;
+}
+
 main .titles-in-main {
   bottom: 97%;
   left: 0;

@@ -1,4 +1,5 @@
-// CAMBIARE SOTTOLINEATURE ICONE ASIDE ATTIVE (MENU > DI MOBILE)
+/* CAMBIARE SOTTOLINEATURE ICONE ASIDE
+ ATTIVE (SOLO PER MENU > DI MOBILE)*/
 // funzionamento click su cerca
 var cerca = document.querySelector('#cerca');
 var lineDicerca = document.querySelector('#lineDicerca');
@@ -36,4 +37,21 @@ libreria.addEventListener('click', () => {
     elemLefOfIcon[i].classList.remove('active');
   }
   lineDilibreria.classList.add('active');
+});
+
+// CUORE DEI LIKE -> PASSARE DA PIENO A VUOTO ON CLICK
+
+var cuoreVuoto = document.querySelector('#cuoreVuoto');
+var cuorePieno = document.querySelector('#cuorePieno');
+
+cuorePieno.style.display = 'none';
+
+cuoreVuoto.addEventListener('click', () => {
+  cuoreVuoto.style.display = 'none';
+  cuorePieno.style.display = 'block';
+});
+
+cuorePieno.addEventListener('click', () => {
+  cuorePieno.style.display = 'none';
+  cuoreVuoto.style.display = 'block';
 });
