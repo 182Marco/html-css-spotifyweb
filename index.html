@@ -20,569 +20,562 @@
   <body>
     <div class="app w100vw h100vh grey-txt flex-y">
       <!-- AVVOLGITORE DI TUTO TRANNE FOOTER -->
-      <div class="wrap-all-but-footer">
-        <!-- AVVOLGITORE aside E CONTENITORE header + main -->
-        <div class="wrap-aside-headerMain flex h100">
-          <!-- ****** -->
-          <!-- ASIDE -->
-          <aside class="w40px h100 black-color-bg flex-y space-between py-8">
-            <!-- MENU IN VERSIONE MOBILE -->
-            <!-- icone in alto -->
-            <div
-              class="icon-wrap-mobile w100 h130px space-between align-items-center"
-            >
-              <ul class="no-list-style">
-                <li>
-                  <a href="" class="flex justify-center">
-                    <img src="img/logo-small.svg" alt="logo" class="w65"
-                  /></a>
-                </li>
-                <li>
-                  <a href="" class="flex justify-center">
-                    <img src="img/home.svg" alt="home" class="w65 my-10"
-                  /></a>
-                </li>
-                <li>
-                  <a href="" class="flex justify-center">
-                    <img src="img/search.svg" alt="logo" class="w65 mb-10"
-                  /></a>
-                </li>
-                <li>
-                  <a href="" class="flex justify-center">
-                    <img src="img/libreria.svg" alt="logo" class="w65"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <!-- icone in basso -->
-            <ul
-              class="no-list-style icon-wrap-mobile w100 h68px flex-y space-between align-items-center"
-            >
+      <div class="wrap-all-but-footer flex">
+        <!-- ****** -->
+        <!-- ASIDE -->
+        <aside class="w40px h100 black-color-bg flex-y space-between py-8">
+          <!-- MENU IN VERSIONE MOBILE -->
+          <!-- icone in alto -->
+          <div
+            class="icon-wrap-mobile w100 h130px space-between align-items-center"
+          >
+            <ul class="no-list-style">
               <li>
-                <a href="">
-                  <img src="img/download.svg" alt="arrow-down" class="w20px"
+                <a href="" class="flex justify-center">
+                  <img src="img/logo-small.svg" alt="logo" class="w65"
                 /></a>
               </li>
               <li>
-                <a
-                  href=""
-                  class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
-                >
-                  <img src="img/profile.svg" alt="profile" class="w20px" />
-                </a>
+                <a href="" class="flex justify-center">
+                  <img src="img/home.svg" alt="home" class="w65 my-10"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="flex justify-center">
+                  <img src="img/search.svg" alt="logo" class="w65 mb-10"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="flex justify-center">
+                  <img src="img/libreria.svg" alt="logo" class="w65"
+                /></a>
               </li>
             </ul>
-            <!-- MENU VERSIONE DA SCHERMI M IN SU -->
-            <div class="upper-mobile-wrapper flex-y space-between h100 pt-8">
-              <!-- logo da m in su -->
-              <div class="biglogo-wrapper w100 flex-xy-center">
-                <img src="img/logo.svg" alt="logo-big" class="w57" />
-              </div>
-              <!-- wrapper della parte alta -->
-              <div class="logoHomePlaylist-wraper h89 align-items-center">
-                <!-- lista icone in alto da m in su -->
-                <ul class="upper-icon-from-m no-list-style w100 pt-17">
-                  <li>
-                    <a
-                      class="active-aside in-line-b w100 no-decorate fff-color font-s08rem pl-13 pb-6 pt-6"
-                      href=""
-                    >
-                      <img
-                        src="img/home.svg"
-                        alt="home"
-                        class="vertical-middle w11"
-                      />
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="in-line-b w100 no-decorate grey-txt font-s08rem hover-fff-color pl-13 pb-6 pt-6"
-                      href=""
-                    >
-                      <img
-                        src="img/search.svg"
-                        alt="search"
-                        class="vertical-middle w11"
-                      />
-                      Cerca
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="in-line-b w100 no-decorate grey-txt font-s08rem hover-fff-color pl-13 pb-6 pt-6"
-                      href=""
-                    >
-                      <img
-                        src="img/libreria.svg"
-                        alt="libreria"
-                        class="vertical-middle w11"
-                      />
-                      La tua libreria
-                    </a>
-                  </li>
-                </ul>
-                <!-- inizio lista crea e nuova playlist -->
-                <div class="playlist-wrapper w100 h8 mt-8">
-                  <h5
-                    class="text-align-left uppercase fff-color pl-13 pb-8 font-s08rem"
-                  >
-                    Playlist
-                  </h5>
-                  <ul class="">
-                    <li>
-                      <a
-                        href=""
-                        class="create-playlist hover-fff-color in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
-                      >
-                        <i
-                          class="fas fa-plus black-color font-s1e10rem p-7 hover-fff-color-bg"
-                        ></i>
-                        Crea Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                        >Nuova Playlist</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- icone sotto aside in versione da m in poi -->
-              <div class="instalApProfile-wrap h11 ml-13">
-                <a href="" class="no-decorate grey-txt font-s08rem h10px">
-                  <img
-                    src="img/download.svg"
-                    alt="arrow-down"
-                    class="w15px vertical-align-sub mr-10"
-                  />Installa app
-                </a>
-                <!-- linea (horizontal rule) tra istalla e avatar profilo -->
-                <div
-                  class="line h1px grey-color-bg w92 border-rad2 my-11"
-                ></div>
-                <!-- avatar e nome profilo -->
-                <a href="" class="in-line-b w100 pos-rel"
-                  ><div
-                    class="pos-rel grey-color-bg w22px h22px flex-xy-center border-rad50"
+          </div>
+          <!-- icone in basso -->
+          <ul
+            class="no-list-style icon-wrap-mobile w100 h68px flex-y space-between align-items-center"
+          >
+            <li>
+              <a href="">
+                <img src="img/download.svg" alt="arrow-down" class="w20px"
+              /></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
+              >
+                <img src="img/profile.svg" alt="profile" class="w20px" />
+              </a>
+            </li>
+          </ul>
+          <!-- MENU VERSIONE DA SCHERMI M IN SU -->
+          <div class="upper-mobile-wrapper flex-y space-between h100 pt-8">
+            <!-- logo da m in su -->
+            <div class="biglogo-wrapper w100 flex-xy-center">
+              <img src="img/logo.svg" alt="logo-big" class="w57" />
+            </div>
+            <!-- wrapper della parte alta -->
+            <div class="logoHomePlaylist-wraper h89 align-items-center">
+              <!-- lista icone in alto da m in su -->
+              <ul class="upper-icon-from-m no-list-style w100 pt-17">
+                <li>
+                  <a
+                    class="active-aside in-line-b w100 no-decorate fff-color font-s08rem pl-13 pb-6 pt-6"
+                    href=""
                   >
                     <img
-                      src="img/profile.svg"
-                      alt="profile"
-                      class="w15px center-of-abs"
+                      src="img/home.svg"
+                      alt="home"
+                      class="vertical-middle w11"
                     />
-                  </div>
-                  <h5
-                    class="profile-name in-line-b no-decorate fff-color centerY-of-abs ml-6"
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="in-line-b w100 no-decorate grey-txt font-s08rem hover-fff-color pl-13 pb-6 pt-6"
+                    href=""
                   >
-                    John Doe
-                  </h5>
-                </a>
-              </div>
-            </div>
-          </aside>
-          <div class="wrap-header-and-main h100 pos-rel">
-            <!-- ****** -->
-            <!-- HEADER -->
-            <header
-              class="flex justify-end align-items-center top0-left0-of-abs w100 h75px secondary-color-bg p-10"
-            >
-              <button
-                class="fff-color border-1px secondary-color-bg font-s06rem border-rad30 pl-32 pr-32 pt-11 pb-11 cursor-pointer"
-              >
-                EFFETTUA L'UPGRADE
-              </button>
-            </header>
-            <!-- ****** -->
-            <!-- MAIN-->
-            <main class="h100 primary-color-bg pl-23 pr-10 pt-83">
-              <!-- contenitore titoli da in evidenza a scopri -->
-              <ul
-                class="txt-center no-list-style font-s08rem font-w600 w100 pb-3 z-index-20"
-              >
-                <li class="in-line-b p-7">
-                  <a
-                    href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >IN EVIDENZA
-                    <div class="active-page h3px w30px brand-color-bg"></div>
+                    <img
+                      src="img/search.svg"
+                      alt="search"
+                      class="vertical-middle w11"
+                    />
+                    Cerca
                   </a>
                 </li>
-                <li class="in-line-b p-7">
+                <li>
                   <a
+                    class="in-line-b w100 no-decorate grey-txt font-s08rem hover-fff-color pl-13 pb-6 pt-6"
                     href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >PODCAST
-                    <div
-                      class="active-page h3px w30px brand-color-bg display-no"
-                    ></div>
-                  </a>
-                </li>
-                <li class="in-line-b p-7">
-                  <a
-                    href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >CLASSIFICHE
-                    <div
-                      class="active-page h3px w30px brand-color-bg display-no"
-                    ></div>
-                  </a>
-                </li>
-                <li class="in-line-b p-7">
-                  <a
-                    href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >GENERI E MOOD
-                    <div
-                      class="active-page h3px w30px brand-color-bg display-no"
-                    ></div>
-                  </a>
-                </li>
-                <li class="in-line-b p-7">
-                  <a
-                    href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >NUOVE USCITE
-                    <div
-                      class="active-page h3px w30px brand-color-bg display-no"
-                    ></div>
-                  </a>
-                </li>
-                <li class="in-line-b p-7">
-                  <a
-                    href=""
-                    class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
-                    >SCOPRI
-                    <div
-                      class="active-page h3px w30px brand-color-bg display-no"
-                    ></div>
+                  >
+                    <img
+                      src="img/libreria.svg"
+                      alt="libreria"
+                      class="vertical-middle w11"
+                    />
+                    La tua libreria
                   </a>
                 </li>
               </ul>
-              <!-- parte con gallery dei brani vera e porpria -->
-              <div class="overflow-y-auto h93 pb-40">
-                <!-- titolo di riga Recently Played-->
-                <div class="row flex wrap pt-42">
-                  <!-- immagine 1 heavy metal -->
-                  <div class="col-l-2 col-m-3 col-6">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <h2
-                          class="titles-in-main pos-abs fff-color pb-23 w200px"
+              <!-- inizio lista crea e nuova playlist -->
+              <div class="playlist-wrapper w100 h8 mt-8">
+                <h5
+                  class="text-align-left uppercase fff-color pl-13 pb-8 font-s08rem"
+                >
+                  Playlist
+                </h5>
+                <ul class="">
+                  <li>
+                    <a
+                      href=""
+                      class="create-playlist hover-fff-color in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
+                    >
+                      <i
+                        class="fas fa-plus black-color font-s1e10rem p-7 hover-fff-color-bg"
+                      ></i>
+                      Crea Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
+                      >Nuova Playlist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- icone sotto aside in versione da m in poi -->
+            <div class="instalApProfile-wrap h11 ml-13">
+              <a href="" class="no-decorate grey-txt font-s08rem h10px">
+                <img
+                  src="img/download.svg"
+                  alt="arrow-down"
+                  class="w15px vertical-align-sub mr-10"
+                />Installa app
+              </a>
+              <!-- linea (horizontal rule) tra istalla e avatar profilo -->
+              <div class="line h1px grey-color-bg w92 border-rad2 my-11"></div>
+              <!-- avatar e nome profilo -->
+              <a href="" class="in-line-b w100 pos-rel"
+                ><div
+                  class="pos-rel grey-color-bg w22px h22px flex-xy-center border-rad50"
+                >
+                  <img
+                    src="img/profile.svg"
+                    alt="profile"
+                    class="w15px center-of-abs"
+                  />
+                </div>
+                <h5
+                  class="profile-name in-line-b no-decorate fff-color centerY-of-abs ml-6"
+                >
+                  John Doe
+                </h5>
+              </a>
+            </div>
+          </div>
+        </aside>
+        <div class="wrap-header-and-main h100 pos-rel">
+          <!-- ****** -->
+          <!-- HEADER -->
+          <header
+            class="flex justify-end align-items-center top0-left0-of-abs w100 h75px secondary-color-bg p-10"
+          >
+            <button
+              class="fff-color border-1px secondary-color-bg font-s06rem border-rad30 pl-32 pr-32 pt-11 pb-11 cursor-pointer"
+            >
+              EFFETTUA L'UPGRADE
+            </button>
+          </header>
+          <!-- ****** -->
+          <!-- MAIN-->
+          <main class="h100 primary-color-bg pl-23 pr-10 pt-83">
+            <!-- contenitore titoli da in evidenza a scopri -->
+            <ul
+              class="txt-center no-list-style font-s08rem font-w600 w100 pb-3 z-index-20"
+            >
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >IN EVIDENZA
+                  <div class="active-page h3px w30px brand-color-bg"></div>
+                </a>
+              </li>
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >PODCAST
+                  <div
+                    class="active-page h3px w30px brand-color-bg display-no"
+                  ></div>
+                </a>
+              </li>
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >CLASSIFICHE
+                  <div
+                    class="active-page h3px w30px brand-color-bg display-no"
+                  ></div>
+                </a>
+              </li>
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >GENERI E MOOD
+                  <div
+                    class="active-page h3px w30px brand-color-bg display-no"
+                  ></div>
+                </a>
+              </li>
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >NUOVE USCITE
+                  <div
+                    class="active-page h3px w30px brand-color-bg display-no"
+                  ></div>
+                </a>
+              </li>
+              <li class="in-line-b p-7">
+                <a
+                  href=""
+                  class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
+                  >SCOPRI
+                  <div
+                    class="active-page h3px w30px brand-color-bg display-no"
+                  ></div>
+                </a>
+              </li>
+            </ul>
+            <!-- parte con gallery dei brani vera e porpria -->
+            <div class="overflow-y-auto h93 pb-40">
+              <!-- titolo di riga Recently Played-->
+              <div class="row flex wrap pt-42">
+                <!-- immagine 1 heavy metal -->
+                <div class="col-l-2 col-m-3 col-6">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
                         >
-                          Recently Played
-                        </h2>
-                        <img
-                          src="img/metal_lifting.jpg"
-                          alt="Heavy Metal"
-                          class="w100"
-                        />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Heavy Metal
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
-                    </div>
-                  </div>
-                  <!-- immagine 2 stanger e titoli -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
                         </div>
-                        <img
-                          src="img/stranger.jpeg"
-                          alt="stranger things"
-                          class="w100"
-                        />
                       </div>
-                      <h4
-                        class="fff-color font-s09rem my-4 txt-center cursor-pointer"
-                      >
-                        Stranger Things, Vol. 1 (a Netflix original series
-                        Soundtrack
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">
-                        Kyle Dixon & Michael Stein
-                      </p>
+                      <h2 class="titles-in-main pos-abs fff-color pb-23 w200px">
+                        Recently Played
+                      </h2>
+                      <img
+                        src="img/metal_lifting.jpg"
+                        alt="Heavy Metal"
+                        class="w100"
+                      />
                     </div>
-                  </div>
-                  <!-- immagine 3 a quiet place -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/aquietplace.jpeg"
-                          alt="A quiet place"
-                          class="w100"
-                        />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        A quiet place
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
-                    </div>
-                  </div>
-                  <!-- immagine 4 a slit -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img src="img/split.jpeg" alt="split" class="w100" />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Split
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
-                    </div>
-                  </div>
-                  <!-- immagine 5 a cure for wellness -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/cure.jpeg"
-                          alt="a cure for weellness"
-                          class="w100"
-                        />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        A cure for wellness
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
-                    </div>
-                  </div>
-                  <!-- immagine 6 a cure sinister -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/sinister.jpeg"
-                          alt="sinister"
-                          class="w100"
-                        />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        sinister
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
-                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Heavy Metal
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
                   </div>
                 </div>
-                <!-- FILA CREATO PER JOHN DOE -->
-                <div class="row flex wrap pt-83">
-                  <!-- immagine 1 release radar -->
-                  <div class="col-l-2 col-m-3 col-6">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <!-- wrapper del titolo e sottotitolo seconda linea -->
-                        <div class="titles-in-main-row2 pos-abs w330px">
-                          <h2 class="fff-color">
-                            Creato per Jhon Doe
-                            <p class="pb-12 font-s08rem grey-txt">
-                              Più ascoliti, più accurati saranno i suggerimenti
-                            </p>
-                          </h2>
+                <!-- immagine 2 stanger e titoli -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
                         </div>
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/radar.jpeg"
-                          alt="Release radar"
-                          class="w100"
-                        />
                       </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Release Radar
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                      <img
+                        src="img/stranger.jpeg"
+                        alt="stranger things"
+                        class="w100"
+                      />
                     </div>
-                  </div>
-                  <!-- immagine 2 Daily Mix -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/mixdaily.jpeg"
-                          alt="daily mix"
-                          class="w100"
-                        />
-                      </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Daily Mix 1
-                      </h4>
-                    </div>
+                    <h4
+                      class="fff-color font-s09rem my-4 txt-center cursor-pointer"
+                    >
+                      Stranger Things, Vol. 1 (a Netflix original series
+                      Soundtrack
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">
+                      Kyle Dixon & Michael Stein
+                    </p>
                   </div>
                 </div>
-                <!-- ARTISTI PIU' POPOLARI -->
-                <div class="row flex wrap pt-77">
-                  <!-- immagine 1 release radar -->
-                  <div class="col-l-2 col-m-3 col-6">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <!-- wrapper del titolo e sottotitolo terza linea -->
-                        <div class="titles-in-main-row3 pos-abs w330px">
-                          <h2 class="fff-color">
-                            Artisti più popolari
-                            <p class="pb-12 font-s08rem grey-txt">
-                              Più ascoliti, più accurati saranno i suggerimenti
-                            </p>
-                          </h2>
+                <!-- immagine 3 a quiet place -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
                         </div>
-                        <div class="layer circled pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
-                        </div>
-                        <img
-                          src="img/youg.jpeg"
-                          alt="young Lana Del Ray"
-                          class="w100 border-rad50"
-                        />
                       </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Lana del Rey
-                      </h4>
-                      <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                      <img
+                        src="img/aquietplace.jpeg"
+                        alt="A quiet place"
+                        class="w100"
+                      />
                     </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      A quiet place
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
                   </div>
-                  <!-- immagine 2 Daily Mix -->
-                  <div class="col-l-2 col-m-3 col-6 h50">
-                    <div class="img-e-txt-wrap w93 flex-y align-items-center">
-                      <div class="img-wrap pos-rel">
-                        <div class="layer circled pos-abs">
-                          <div
-                            class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
-                          >
-                            <i
-                              class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
-                            ></i>
-                          </div>
+                </div>
+                <!-- immagine 4 a slit -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
                         </div>
-                        <img
-                          src="img/einaudi.jpeg"
-                          alt="Einaudi"
-                          class="w100 border-rad50"
-                        />
                       </div>
-                      <h4 class="fff-color font-s09rem my-4 cursor-pointer">
-                        Einaudi
-                      </h4>
+                      <img src="img/split.jpeg" alt="split" class="w100" />
                     </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Split
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                  </div>
+                </div>
+                <!-- immagine 5 a cure for wellness -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/cure.jpeg"
+                        alt="a cure for weellness"
+                        class="w100"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      A cure for wellness
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                  </div>
+                </div>
+                <!-- immagine 6 a cure sinister -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/sinister.jpeg"
+                        alt="sinister"
+                        class="w100"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      sinister
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
                   </div>
                 </div>
               </div>
-            </main>
-          </div>
+              <!-- FILA CREATO PER JOHN DOE -->
+              <div class="row flex wrap pt-83">
+                <!-- immagine 1 release radar -->
+                <div class="col-l-2 col-m-3 col-6">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <!-- wrapper del titolo e sottotitolo seconda linea -->
+                      <div class="titles-in-main-row2 pos-abs w330px">
+                        <h2 class="fff-color">
+                          Creato per Jhon Doe
+                          <p class="pb-12 font-s08rem grey-txt">
+                            Più ascoliti, più accurati saranno i suggerimenti
+                          </p>
+                        </h2>
+                      </div>
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/radar.jpeg"
+                        alt="Release radar"
+                        class="w100"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Release Radar
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                  </div>
+                </div>
+                <!-- immagine 2 Daily Mix -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/mixdaily.jpeg"
+                        alt="daily mix"
+                        class="w100"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Daily Mix 1
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- ARTISTI PIU' POPOLARI -->
+              <div class="row flex wrap pt-77">
+                <!-- immagine 1 release radar -->
+                <div class="col-l-2 col-m-3 col-6">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <!-- wrapper del titolo e sottotitolo terza linea -->
+                      <div class="titles-in-main-row3 pos-abs w330px">
+                        <h2 class="fff-color">
+                          Artisti più popolari
+                          <p class="pb-12 font-s08rem grey-txt">
+                            Più ascoliti, più accurati saranno i suggerimenti
+                          </p>
+                        </h2>
+                      </div>
+                      <div class="layer circled pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/youg.jpeg"
+                        alt="young Lana Del Ray"
+                        class="w100 border-rad50"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Lana del Rey
+                    </h4>
+                    <p class="font-s08rem cursor-pointer mb-15">Subtitle</p>
+                  </div>
+                </div>
+                <!-- immagine 2 Daily Mix -->
+                <div class="col-l-2 col-m-3 col-6 h50">
+                  <div class="img-e-txt-wrap w93 flex-y align-items-center">
+                    <div class="img-wrap pos-rel">
+                      <div class="layer circled pos-abs">
+                        <div
+                          class="circle-of-play opacity0 cursor-pointer fff-color border-rad50 border-3px h30px w30px pos-abs"
+                        >
+                          <i
+                            class="fas fa-play pos-abs opacity0 cursor-pointer fff-color"
+                          ></i>
+                        </div>
+                      </div>
+                      <img
+                        src="img/einaudi.jpeg"
+                        alt="Einaudi"
+                        class="w100 border-rad50"
+                      />
+                    </div>
+                    <h4 class="fff-color font-s09rem my-4 cursor-pointer">
+                      Einaudi
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
       </div>
       <!-- ****** -->
