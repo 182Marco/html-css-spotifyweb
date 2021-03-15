@@ -143,8 +143,9 @@ footer .fa-play:hover {
     display: flex;
     flex-direction: column;
   }
-  .active-aside {
-    border-left: 3px solid #a1ed2e;
+
+  .active.aside-icon-element {
+    background-color: #a1ed2e;
   }
   /* colorazione e hover di nuovaplaylist
   come icona e suo testo (grigio leggermente
