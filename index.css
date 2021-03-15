@@ -77,7 +77,8 @@ seza dover attribuire troppe classi)*/
 aside .new-playlist-ul input ::placeholder {
   color: #fff;
 }
-aside #newPlaylistUl a {
+aside #newPlaylistUl a,
+.create-playlist {
   display: inline-block;
   text-decoration: none;
   color: #808080;
