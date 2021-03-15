@@ -129,3 +129,48 @@ cuorePieno.addEventListener('click', () => {
   cuorePieno.style.display = 'none';
   cuoreVuoto.style.display = 'block';
 });
+
+// creare una nuova playlist
+// variabile dell'ul che le contiene
+var newPlaylistUl = document.querySelector('#newPlaylistUl');
+// rendere invisibile e rimuovere dal flusso imput
+var inputNewPlay = document.querySelector('#inputNewPlay');
+inputNewPlay.style.display = 'none';
+// placeholder prima del click
+var scrittaCreaPlay = document.querySelector('#scrittaCreaPlay');
+// li della lista che chiama funzione
+var createNewPlay = document.querySelector('#createNewPlay');
+
+createNewPlay.addEventListener('click', createPlaylist);
+createNewPlay.addEventListener('keypress', callCreatePlaylist);
+
+function callCreatePlaylist() {
+  if (event.keyCode === 13) {
+    createPlaylist();
+  }
+}
+
+function createPlaylist() {
+  if (inputNewPlay.style.display == 'none') {
+    // togliere dal flusso placeholder
+    scrittaCreaPlay.style.display = 'none';
+    // reinserire imput e focus
+    inputNewPlay.style.display = 'inline-block';
+    inputNewPlay.focus();
+  } else {
+    if (inputNewPlay.value == '') {
+      inputNewPlay.placeholder = 'scrivi un nome!';
+    } else {
+      // creare nuovo elemento
+      var newLi = document.createElement('li');
+      newPlaylistUl.appendChild(newLi);
+      var playlist = document.createElement('a');
+      playlist.innerHTML = inputNewPlay.value;
+      newLi.appendChild(playlist);
+      //   azzerare l'imput nome playlist
+      inputNewPlay.value = '';
+    }
+  }
+}
+
+// (inputNewPlay.value == '')

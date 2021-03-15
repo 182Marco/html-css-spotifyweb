@@ -141,72 +141,36 @@
                   </a>
                 </li>
               </ul>
-              <!-- inizio lista crea e nuova playlist -->
-              <div class="playlist-wrapper w100 h8 mt-8">
+              <!-- wrapper playlist  -->
+              <div class="w100 mt-8 h80">
                 <h5
                   class="text-align-left uppercase fff-color pl-13 pb-8 font-s08rem"
                 >
                   Playlist
                 </h5>
-                <ul class="">
-                  <li>
-                    <a
-                      href=""
-                      class="create-playlist hover-fff-color in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8"
-                    >
+                <!-- inizio lista crea e nuova playlist -->
+                <ul id="newPlaylistUl" class="overflow-y-auto h75">
+                  <li id="createNewPlay">
+                    <a href="#" class="create-playlist">
                       <i
                         class="fas fa-plus black-color font-s1e10rem p-7 hover-fff-color-bg"
                       ></i>
-                      Crea Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="in-line-b no-decorate grey-txt pl-13 font-s08rem pb-8 hover-fff-color"
-                      >Nuova Playlist</a
-                    >
+                      <span id="scrittaCreaPlay">Crea Playlist</span>
+                      <input
+                        type="text"
+                        placeholder="La mia musica"
+                        class="black-color-bg no-border fff-color no-outline"
+                        id="inputNewPlay"
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <!-- icone sotto aside in versione da m in poi -->
-            <div class="instalApProfile-wrap h11 ml-13">
+          </div>
+          <!-- icone sotto aside in versione da m in poi -->
+          <div class="pos-abs position-profile w14 ml-13">
+            <div class="instalApProfile-wrap w100 h11">
               <a href="" class="no-decorate grey-txt font-s08rem h10px">
                 <img
                   src="img/download.svg"
@@ -215,7 +179,9 @@
                 />Installa app
               </a>
               <!-- linea (horizontal rule) tra istalla e avatar profilo -->
-              <div class="line h1px grey-color-bg w92 border-rad2 my-11"></div>
+              <div
+                class="line h1px w100 grey-color-bg w92 border-rad2 my-11"
+              ></div>
               <!-- avatar e nome profilo -->
               <a href="" class="in-line-b w100 pos-rel"
                 ><div
@@ -639,16 +605,16 @@
           </div>
           <!-- contenitore like e cartella -->
           <ul
-            class="heartFolder-wrap flex-y space-between align-items-center h38px no-list-style"
+            class="heartFolder-wrap flex-y space-between align-items-center h38px w43px no-list-style"
           >
             <li>
               <a href="#" class="grey-txt hover-fff-color" id="cuorePieno">
-                <i class="fas fa-heart font-s1e1rem"></i>
+                <i class="fas fa-heart font-s1rem"></i>
               </a>
             </li>
             <li>
               <a href="#" class="grey-txt hover-fff-color" id="cuoreVuoto">
-                <i class="far fa-heart mb-2 font-s01e1rem"></i>
+                <i class="far fa-heart font-s01e1rem"></i>
               </a>
             </li>
             <li>

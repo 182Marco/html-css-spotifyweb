@@ -71,9 +71,32 @@ m in su su mobile */
 .instalApProfile-wrap {
   display: none;
 }
+/* stili  della lista di playlist (no classi di
+riutilizzo per mettere create element in js
+seza dover attribuire troppe classi)*/
+aside .new-playlist-ul input ::placeholder {
+  color: #fff;
+}
+aside #newPlaylistUl a {
+  display: inline-block;
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.8rem;
+  padding-left: 13px;
+  padding-bottom: 8px;
+}
+aside #newPlaylistUl a:hover {
+  color: #fff;
+}
 /* colore del più della playlist */
 aside .fa-plus {
   background-color: #a3a3a3;
+}
+/* contenitore in basso aside
+(installa app e profilo) */
+aside .position-profile {
+  bottom: 10%;
+  left: 0;
 }
 /* HEADER BOTTON */
 header button {
@@ -145,6 +168,7 @@ footer .fa-play:hover {
   .upper-mobile-wrapper {
     display: flex;
   }
+
   .instalApProfile-wrap {
     display: flex;
     flex-direction: column;
