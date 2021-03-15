@@ -169,6 +169,8 @@ function createPlaylist() {
       newLi.appendChild(playlist);
       //   azzerare l'imput nome playlist
       inputNewPlay.value = '';
+      inputNewPlay.style.display = 'none';
+      scrittaCreaPlay.style.display = 'inline-block';
     }
   }
 }
