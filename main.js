@@ -39,6 +39,80 @@ libreria.addEventListener('click', () => {
   lineDilibreria.classList.add('active');
 });
 
+/* CAMBIARE SOTTOLINEATURE TITOLI MAIN */
+
+// evidenza
+var evidenza = document.querySelector('#evidenza');
+var evidenzaLine = document.querySelector('#evidenzaLine');
+
+evidenza.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  evidenzaLine.style.display = 'block';
+});
+// podcast
+var podcast = document.querySelector('#podcast');
+var podcastLine = document.querySelector('#podcastLine');
+podcastLine.style.display = 'none';
+
+podcast.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  podcastLine.style.display = 'block';
+});
+// classifiche
+var classifiche = document.querySelector('#classifiche');
+var classificheLine = document.querySelector('#classificheLine');
+classificheLine.style.display = 'none';
+
+classifiche.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  classificheLine.style.display = 'block';
+});
+// generi
+var generi = document.querySelector('#generi');
+var generiLine = document.querySelector('#generiLine');
+generiLine.style.display = 'none';
+
+generi.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  generiLine.style.display = 'block';
+});
+// NuoveUscite
+var NuoveUscite = document.querySelector('#NuoveUscite');
+var NuoveUsciteLine = document.querySelector('#NuoveUsciteLine');
+NuoveUsciteLine.style.display = 'none';
+
+NuoveUscite.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  NuoveUsciteLine.style.display = 'block';
+});
+// scopri
+var scopri = document.querySelector('#scopri');
+var scopriLine = document.querySelector('#scopriLine');
+scopriLine.style.display = 'none';
+
+scopri.addEventListener('click', () => {
+  var pagActiveList = document.querySelectorAll('.active-page');
+  for (let i = 0; i < pagActiveList.length; i++) {
+    pagActiveList[i].style.display = 'none';
+  }
+  scopriLine.style.display = 'block';
+});
+
 // CUORE DEI LIKE -> PASSARE DA PIENO A VUOTO ON CLICK
 
 var cuoreVuoto = document.querySelector('#cuoreVuoto');
