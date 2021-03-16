@@ -175,4 +175,110 @@ function createPlaylist() {
   }
 }
 
-// (inputNewPlay.value == '')
+// SOSTITUIRE IMMAGINE SOTTO A SX E TITOLO
+
+// variabile img e titolo sotto sx
+var imgBranoSottoSx = document.querySelector('#imgBranoSottoSx');
+var titleBranoSottoSx = document.querySelector('#titleBranoSottoSx');
+
+// metal
+var metalLinksNodeList = document.querySelectorAll('.metal');
+
+var i;
+for (let i = 0; i < metalLinksNodeList.length; i++) {
+  metalLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Heavy Metal';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/metal_lifting.jpg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+// stranger
+var strangerLinksNodeList = document.querySelectorAll('.stranger');
+
+for (let i = 0; i < strangerLinksNodeList.length; i++) {
+  strangerLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Stranger Things';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/stranger.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+
+// a quiet place
+var quietLinksNodeList = document.querySelectorAll('.quiet');
+
+for (let i = 0; i < quietLinksNodeList.length; i++) {
+  quietLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'A quiet place';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/aquietplace.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+// split
+var splitLinksNodeList = document.querySelectorAll('.split');
+
+for (let i = 0; i < splitLinksNodeList.length; i++) {
+  splitLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'split';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/split.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+// A cure for wellness
+var cureLinksNodeList = document.querySelectorAll('.cure');
+
+for (let i = 0; i < cureLinksNodeList.length; i++) {
+  cureLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'A cure for wellness';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/cure.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+
+// sinister
+var sinisterLinksNodeList = document.querySelectorAll('.sinister');
+
+for (let i = 0; i < sinisterLinksNodeList.length; i++) {
+  sinisterLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Sinister';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/sinister.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+
+// Release Radar
+var radarLinksNodeList = document.querySelectorAll('.radar');
+
+for (let i = 0; i < radarLinksNodeList.length; i++) {
+  radarLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Release Radar';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/radar.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
+
+// Daily Mix 1
+var mixLinksNodeList = document.querySelectorAll('.mix');
+
+for (let i = 0; i < mixLinksNodeList.length; i++) {
+  mixLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Daily Mix 1';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/mixdaily.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+  });
+}
