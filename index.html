@@ -31,22 +31,22 @@
           >
             <ul class="no-list-style">
               <li>
-                <a href="" class="flex justify-center">
+                <a href="#" class="flex justify-center">
                   <img src="img/logo-small.svg" alt="logo" class="w65"
                 /></a>
               </li>
               <li>
-                <a href="" class="flex justify-center">
+                <a href="#" class="flex justify-center">
                   <img src="img/home.svg" alt="home" class="w65 my-10"
                 /></a>
               </li>
               <li>
-                <a href="" class="flex justify-center">
+                <a href="#" class="flex justify-center">
                   <img src="img/search.svg" alt="logo" class="w65 mb-10"
                 /></a>
               </li>
               <li>
-                <a href="" class="flex justify-center">
+                <a href="#" class="flex justify-center">
                   <img src="img/libreria.svg" alt="logo" class="w65"
                 /></a>
               </li>
@@ -57,13 +57,13 @@
             class="no-list-style icon-wrap-mobile w100 h68px flex-y space-between align-items-center"
           >
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/download.svg" alt="arrow-down" class="w20px"
               /></a>
             </li>
             <li>
               <a
-                href=""
+                href="#"
                 class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
               >
                 <img src="img/profile.svg" alt="profile" class="w20px" />
@@ -170,7 +170,7 @@
           <!-- icone sotto aside in versione da m in poi -->
           <div class="pos-abs position-profile w14 ml-13">
             <div class="instalApProfile-wrap w100 h11">
-              <a href="" class="no-decorate grey-txt font-s08rem h10px">
+              <a href="#" class="no-decorate grey-txt font-s08rem h10px">
                 <img
                   src="img/download.svg"
                   alt="arrow-down"
@@ -180,7 +180,7 @@
               <!-- linea (horizontal rule) tra istalla e avatar profilo -->
               <div class="line h1px w100 grey-color-bg border-rad2 my-11"></div>
               <!-- avatar e nome profilo -->
-              <a href="" class="in-line-b w100 pos-rel"
+              <a href="#" class="in-line-b w100 pos-rel"
                 ><div
                   class="pos-rel grey-color-bg w22px h22px flex-xy-center border-rad50"
                 >
@@ -602,15 +602,15 @@
           <!-- contenitore immagine brano + sui testi -->
           <div class="flex align-items-center">
             <img
-              src="img/sinister.jpeg"
-              alt="sinister"
+              src="img/stranger.jpeg"
+              alt="Stranger Things"
               class="w35px vertical-middle"
               id="imgBranoSottoSx"
             />
             <!-- contenitore testi del brano -->
             <div class="pl-10">
               <p class="fff-color font-w700">
-                <strong id="titleBranoSottoSx">Sinister</strong>
+                <strong id="titleBranoSottoSx">Stranger Things</strong>
               </p>
               <p class="font-s08rem hover-underline">Brano Nome</p>
             </div>
@@ -645,10 +645,10 @@
               class="player-btn-wrap flex space-between align-items-center w75 no-list-style"
             >
               <li>
-                <a href="" class="fff-color"> <i class="fas fa-random"></i></a>
+                <a href="#" class="fff-color"> <i class="fas fa-random"></i></a>
               </li>
               <li>
-                <a href="" class="fff-color">
+                <a href="#" class="fff-color">
                   <i class="fas fa-caret-left font-s1e5rem pos-rel">
                     <!-- linea vertivale a sx del sinbolo per mandare indietro il brano -->
                     <span
@@ -656,16 +656,24 @@
                     ></span> </i
                 ></a>
               </li>
-              <li>
-                <a href="" class="fff-color no-decorate">
+              <li id="playLi">
+                <a href="#" class="fff-color no-decorate">
                   <div
                     class="wrap-play-btn flex-xy-center border-3px fff-color border-rad50 w30px h30px"
                   >
-                    <i class="fas fa-play pl-3"></i></div
+                    <i id="play" class="fas fa-play pl-3"></i></div
+                ></a>
+              </li>
+              <li id="pauseLi">
+                <a href="#" class="fff-color no-decorate">
+                  <div
+                    class="wrap-play-btn flex-xy-center border-3px fff-color border-rad50 w30px h30px"
+                  >
+                    <i id="pause" class="fas fa-pause"></i></div
                 ></a>
               </li>
               <li>
-                <a href="" class="fff-color">
+                <a href="#" class="fff-color">
                   <i class="fas fa-caret-right font-s1e5rem pos-rel">
                     <!-- linea vertivale a dx del sinbolo per mandare avanti il brano -->
                     <span
@@ -674,7 +682,7 @@
                 ></a>
               </li>
               <li>
-                <a href="" class="fff-color">
+                <a href="#" class="fff-color">
                   <i class="fas fa-redo-alt"></i>
                 </a>
               </li>
@@ -682,21 +690,23 @@
           </div>
           <!-- barra di scorrimento del player -->
           <div
+            id="progression"
             class="fff-color flex space-between align-items-center font-s075rem grey-scorrimento-color"
           >
-            <span>0:25</span>
+            <span id="secondiPassati">0:00</span>
             <!-- barra di progressione -->
             <div class="time-bar h4px w60 grey-color-bg border-rad5">
               <!-- scorrimento -->
               <div
-                class="scorrimento-tempo pos-rel grey-scorrimento-color-bg h100 w20 hover-brand-color-bg border-rad5"
+                class="pos-rel grey-scorrimento-color-bg h100 hover-brand-color-bg border-rad5"
+                id="scorrimentoTempo"
               >
                 <div
-                  class="pallino tempo pos-abs h13px w13px light-grey-color-bg border-rad50 opacity0"
+                  class="pallino tempo pos-abs h13px w13px light-grey-color-bg border-rad50"
                 ></div>
               </div>
             </div>
-            <span>4:35</span>
+            <span>1:08</span>
           </div>
         </div>
         <!-- volum wraper -->
@@ -704,17 +714,17 @@
           class="volum-wrap flex space-between align-items-center w25 no-list-style"
         >
           <li>
-            <a href="" class="grey-txt">
+            <a href="#" class="grey-txt">
               <i class="fas fa-list"></i>
             </a>
           </li>
           <li>
-            <a href="" class="grey-txt">
+            <a href="#" class="grey-txt">
               <i class="fas fa-desktop"></i>
             </a>
           </li>
           <li>
-            <a href="" class="grey-txt">
+            <a href="#" class="grey-txt">
               <i class="fas fa-volume-up"></i>
             </a>
           </li>
@@ -732,6 +742,10 @@
         </ul>
       </footer>
     </div>
+    <!-- traccia stanger things -->
+    <audio id="things">
+      <source src="things.mp3" type="audio/mpeg" />
+    </audio>
     <script src="main.js"></script>
   </body>
 </html>

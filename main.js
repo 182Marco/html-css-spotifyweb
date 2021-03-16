@@ -194,18 +194,6 @@ for (let i = 0; i < metalLinksNodeList.length; i++) {
     imgBranoSottoSx.setAttributeNode(src);
   });
 }
-// stranger
-var strangerLinksNodeList = document.querySelectorAll('.stranger');
-
-for (let i = 0; i < strangerLinksNodeList.length; i++) {
-  strangerLinksNodeList[i].addEventListener('click', () => {
-    titleBranoSottoSx.innerHTML = 'Stranger Things';
-    imgBranoSottoSx.removeAttribute('src');
-    var src = document.createAttribute('src');
-    src.value = 'img/stranger.jpeg';
-    imgBranoSottoSx.setAttributeNode(src);
-  });
-}
 
 // a quiet place
 var quietLinksNodeList = document.querySelectorAll('.quiet');
@@ -281,4 +269,83 @@ for (let i = 0; i < mixLinksNodeList.length; i++) {
     src.value = 'img/mixdaily.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
   });
+}
+
+// tener bloccata progressione
+var scorrimentoTempo = document.querySelector('#scorrimentoTempo');
+scorrimentoTempo.style.webkitAnimationPlayState = 'paused';
+
+// var progression = document.querySelector('#progression');
+
+// progression.style.display = 'none';
+
+// stranger e funzionamento audio
+var things = document.querySelector('#things');
+var playLi = document.querySelector('#playLi');
+var pauseLi = document.querySelector('#pauseLi');
+var strangerLinksNodeList = document.querySelectorAll('.stranger');
+pauseLi.style.display = 'none';
+things.pause();
+
+for (let i = 0; i < strangerLinksNodeList.length; i++) {
+  strangerLinksNodeList[i].addEventListener('click', () => {
+    titleBranoSottoSx.innerHTML = 'Stranger Things';
+    imgBranoSottoSx.removeAttribute('src');
+    var src = document.createAttribute('src');
+    src.value = 'img/stranger.jpeg';
+    imgBranoSottoSx.setAttributeNode(src);
+    // far suonare
+    playMusic();
+  });
+}
+
+// far funzionare stranger se si clicca play
+var play = document.querySelector('#play');
+
+play.addEventListener('click', playMusic);
+
+function playMusic() {
+  if (titleBranoSottoSx.innerText == 'Stranger Things') {
+    things.play();
+    progression.style.display = 'flex';
+    playLi.style.display = 'none';
+    pauseLi.style.display = 'block';
+    // mettere in variabile il tag che continere il cronometro
+    var secondiPassati = document.querySelector('#secondiPassati');
+    var secondsInzialiInStringa = secondiPassati.innerText.split(':')[1];
+    // cronometro
+    var seconds = parseInt(secondsInzialiInStringa);
+    upDateCountUp();
+    int = setInterval(upDateCountUp, 1000);
+
+    function upDateCountUp() {
+      //far partire animazione
+      scorrimentoTempo.style.webkitAnimationPlayState = 'running';
+      // motore del cronometro
+      var minutes = Math.floor(seconds / 60);
+      moduloSeconds = seconds % 60;
+      BenScrittiSeconds =
+        moduloSeconds < 10 ? `0` + moduloSeconds : moduloSeconds;
+      // tempo definitivo in variabile
+      var time = minutes + ':' + BenScrittiSeconds;
+      //   inserire cronometro nell'elemento a sx barra di scorrimento
+      secondiPassati.innerHTML = time;
+      if (seconds < 68) {
+        seconds++;
+      }
+      //  bloccare
+      var pause = document.querySelector('#pause');
+      pause.addEventListener('click', () => {
+        if (titleBranoSottoSx.innerText == 'Stranger Things') {
+          things.pause();
+          pauseLi.style.display = 'none';
+          playLi.style.display = 'block';
+          //   bloccare animazione
+          scorrimentoTempo.style.webkitAnimationPlayState = 'paused';
+          //   stoppare cronometro
+          clearInterval(int);
+        }
+      });
+    }
+  }
 }

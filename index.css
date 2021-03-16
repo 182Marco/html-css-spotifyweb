@@ -122,19 +122,21 @@ footer .fa-caret-right span {
 /* animazioni barre di scorrimeto e
 pallino che si crea in fondo */
 
-.time-bar:hover .scorrimento-tempo {
+#scorrimentoTempo {
   background-color: #a1ed2e;
-}
-.progression-audio:hover .scorrimento-audio {
-  background-color: #a1ed2e;
+  width: 0;
+  animation: progress linear 68s;
 }
 
-.time-bar:hover .pallino.tempo {
-  opacity: 1;
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-.progression-audio:hover .pallino.audio {
-  opacity: 1;
-}
+
 .pallino {
   left: 100%;
   top: 50%;
