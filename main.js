@@ -384,9 +384,9 @@ function playMusic() {
 
     function upDateCountUp() {
       //far partire animazione
-      document.querySelectorAll(
-        '.scorrimento-tempo'
-      )[0].style.webkitAnimationPlayState = 'running';
+      document.querySelector(
+        '#scorrimentoTempo'
+      ).style.webkitAnimationPlayState = 'running';
       // motore del cronometro
       var minutes = Math.floor(seconds / 60);
       moduloSeconds = seconds % 60;
@@ -398,6 +398,19 @@ function playMusic() {
       secondiPassati.innerHTML = time;
       if (seconds < 68) {
         seconds++;
+      } else {
+        // canzone ferma e da capo
+        things.currentTime = 0;
+        things.pause();
+        // chiamare funz che azzera animazione
+        avanzamentoTempoBarra.classList.remove('scorrimento-tempo');
+        // fermare intervallo
+        clearInterval(int);
+        // cambiare stop in play
+        pauseLi.style.display = 'none';
+        playLi.style.display = 'block';
+        // inidcatore dei secondi azzerato
+        secondiPassati.innerText = '0:00';
       }
       //   azzerare secondi se premuto tasto "redo"
       btnRedo.addEventListener('click', () => {
@@ -411,9 +424,9 @@ function playMusic() {
           pauseLi.style.display = 'none';
           playLi.style.display = 'block';
           //   bloccare animazione
-          document.querySelectorAll(
-            '.scorrimento-tempo'
-          )[0].style.webkitAnimationPlayState = 'paused';
+          document.querySelector(
+            '#scorrimentoTempo'
+          ).style.webkitAnimationPlayState = 'paused';
           //   stoppare cronometro
           clearInterval(int);
         }
@@ -471,11 +484,13 @@ btnIndietro.addEventListener('click', () => {
 // far funzionare tasto da capo (btnRedo a riga 363)
 var avanzamentoTempoBarra = document.querySelector('#scorrimentoTempo');
 
-btnRedo.addEventListener('click', () => {
+btnRedo.addEventListener('click', again);
+
+function again() {
   avanzamentoTempoBarra.classList.remove('scorrimento-tempo');
   setTimeout(function () {
     avanzamentoTempoBarra.classList.add('scorrimento-tempo');
     secondiPassati.innerText = '0:00';
     things.currentTime = 0;
-  }, 1);
-});
+  }, 50);
+}
