@@ -116,9 +116,12 @@ footer .fa-caret-right span {
 /* animazioni barre di scorrimeto e
 pallino che si crea in fondo */
 
-#scorrimentoTempo {
+#progression:hover #scorrimentoTempo {
   background-color: #a1ed2e;
   width: 0;
+}
+#progression:hover .pallino.tempo {
+  opacity: 1;
 }
 
 .scorrimento-tempo {
