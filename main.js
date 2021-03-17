@@ -186,98 +186,158 @@ var metalLinksNodeList = document.querySelectorAll('.metal');
 
 var i;
 for (let i = 0; i < metalLinksNodeList.length; i++) {
-  metalLinksNodeList[i].addEventListener('click', () => {
+  metalLinksNodeList[i].addEventListener('click', metal);
+  function metal() {
     titleBranoSottoSx.innerHTML = 'Heavy Metal';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/metal_lifting.jpg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 
 // a quiet place
 var quietLinksNodeList = document.querySelectorAll('.quiet');
 
 for (let i = 0; i < quietLinksNodeList.length; i++) {
-  quietLinksNodeList[i].addEventListener('click', () => {
+  quietLinksNodeList[i].addEventListener('click', quiet);
+  function quiet() {
     titleBranoSottoSx.innerHTML = 'A quiet place';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/aquietplace.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 // split
 var splitLinksNodeList = document.querySelectorAll('.split');
 
 for (let i = 0; i < splitLinksNodeList.length; i++) {
-  splitLinksNodeList[i].addEventListener('click', () => {
+  splitLinksNodeList[i].addEventListener('click', split);
+  function split() {
     titleBranoSottoSx.innerHTML = 'split';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/split.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 // A cure for wellness
 var cureLinksNodeList = document.querySelectorAll('.cure');
 
 for (let i = 0; i < cureLinksNodeList.length; i++) {
-  cureLinksNodeList[i].addEventListener('click', () => {
+  cureLinksNodeList[i].addEventListener('click', cure);
+  function cure() {
     titleBranoSottoSx.innerHTML = 'A cure for wellness';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/cure.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 
 // sinister
 var sinisterLinksNodeList = document.querySelectorAll('.sinister');
 
 for (let i = 0; i < sinisterLinksNodeList.length; i++) {
-  sinisterLinksNodeList[i].addEventListener('click', () => {
+  sinisterLinksNodeList[i].addEventListener('click', sinister);
+
+  function sinister() {
     titleBranoSottoSx.innerHTML = 'Sinister';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/sinister.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 
 // Release Radar
 var radarLinksNodeList = document.querySelectorAll('.radar');
 
 for (let i = 0; i < radarLinksNodeList.length; i++) {
-  radarLinksNodeList[i].addEventListener('click', () => {
+  radarLinksNodeList[i].addEventListener('click', radar);
+
+  function radar() {
     titleBranoSottoSx.innerHTML = 'Release Radar';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/radar.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
 
 // Daily Mix 1
 var mixLinksNodeList = document.querySelectorAll('.mix');
 
 for (let i = 0; i < mixLinksNodeList.length; i++) {
-  mixLinksNodeList[i].addEventListener('click', () => {
+  mixLinksNodeList[i].addEventListener('click', mix);
+
+  function mix() {
     titleBranoSottoSx.innerHTML = 'Daily Mix 1';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
     src.value = 'img/mixdaily.jpeg';
     imgBranoSottoSx.setAttributeNode(src);
-  });
+  }
 }
+
+// far funzionare tasto random
+var lastNumber;
+document.querySelector('#btnRandom').addEventListener('click', () => {
+  var x = Math.floor(Math.random() * 8);
+  /*   la nidificazione di if serve a rendere altamente
+improbabile che venga sorteggiato lo stesso numero
+cosichè l'utente al click del random non rimanga mai
+ sul brano precedente */
+  if (x == lastNumber) {
+    var x = Math.floor(Math.random() * 8);
+    if (x == lastNumber) {
+      var x = Math.floor(Math.random() * 8);
+      if (x == lastNumber) {
+        var x = Math.floor(Math.random() * 8);
+      } else {
+        asign();
+      }
+    } else {
+      asign();
+    }
+  } else {
+    asign();
+  }
+  //   ******************
+  function asign() {
+    console.log(x);
+    /* evitare che il numero casuale sorteggiato porti la stessa
+     canzone di quella di defaul al caricamento dopo il primo click */
+    if (x == 0 && titleBranoSottoSx.innerText != 'Stranger Things') {
+      stranger();
+    } else if (x == 0 && titleBranoSottoSx.innerText == 'Stranger Things') {
+      /* se siamo al primo giro decido altra canzone e attribuisco numero associato
+         a last number per evitare che possa essere chiamata la stessa al click dopo */
+      quiet();
+      lastNumber = 6;
+    } else if (x == 1) {
+      mix();
+    } else if (x == 2) {
+      radar();
+    } else if (x == 3) {
+      sinister();
+    } else if (x == 4) {
+      cure();
+    } else if (x == 5) {
+      split();
+    } else if (x == 6) {
+      quiet();
+    } else {
+      metal();
+    }
+    lastNumber = x;
+  }
+});
 
 // tener bloccata progressione
 var scorrimentoTempo = document.querySelector('#scorrimentoTempo');
 scorrimentoTempo.style.webkitAnimationPlayState = 'paused';
-
-// var progression = document.querySelector('#progression');
-
-// progression.style.display = 'none';
 
 // stranger e funzionamento audio
 var things = document.querySelector('#things');
@@ -288,7 +348,8 @@ pauseLi.style.display = 'none';
 things.pause();
 
 for (let i = 0; i < strangerLinksNodeList.length; i++) {
-  strangerLinksNodeList[i].addEventListener('click', () => {
+  strangerLinksNodeList[i].addEventListener('click', stranger);
+  function stranger() {
     titleBranoSottoSx.innerHTML = 'Stranger Things';
     imgBranoSottoSx.removeAttribute('src');
     var src = document.createAttribute('src');
@@ -296,7 +357,7 @@ for (let i = 0; i < strangerLinksNodeList.length; i++) {
     imgBranoSottoSx.setAttributeNode(src);
     // far suonare
     playMusic();
-  });
+  }
 }
 
 // far funzionare stranger se si clicca play
