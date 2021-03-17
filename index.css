@@ -125,6 +125,9 @@ pallino che si crea in fondo */
 #scorrimentoTempo {
   background-color: #a1ed2e;
   width: 0;
+}
+
+.scorrimento-tempo {
   animation: progress linear 68s;
 }
 

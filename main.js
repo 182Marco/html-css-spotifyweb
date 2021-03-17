@@ -306,7 +306,6 @@ cosichè l'utente al click del random non rimanga mai
   }
   //   ******************
   function asign() {
-    console.log(x);
     /* evitare che il numero casuale sorteggiato porti la stessa
      canzone di quella di defaul al caricamento dopo il primo click */
     if (x == 0 && titleBranoSottoSx.innerText != 'Stranger Things') {
@@ -336,7 +335,7 @@ cosichè l'utente al click del random non rimanga mai
 });
 
 // tener bloccata progressione
-var scorrimentoTempo = document.querySelector('#scorrimentoTempo');
+var scorrimentoTempo = document.querySelectorAll('.scorrimento-tempo')[0];
 scorrimentoTempo.style.webkitAnimationPlayState = 'paused';
 
 // stranger e funzionamento audio
@@ -360,8 +359,13 @@ for (let i = 0; i < strangerLinksNodeList.length; i++) {
   }
 }
 
+// btn "Redo" in variabile
+var btnRedo = document.querySelector('#btnRedo');
+
 // far funzionare stranger se si clicca play
 var play = document.querySelector('#play');
+// mettere in variabile il tag che continere il cronometro
+var secondiPassati = document.querySelector('#secondiPassati');
 
 play.addEventListener('click', playMusic);
 
@@ -371,8 +375,7 @@ function playMusic() {
     progression.style.display = 'flex';
     playLi.style.display = 'none';
     pauseLi.style.display = 'block';
-    // mettere in variabile il tag che continere il cronometro
-    var secondiPassati = document.querySelector('#secondiPassati');
+    // ricavare il tempo da cui partire al play
     var secondsInzialiInStringa = secondiPassati.innerText.split(':')[1];
     // cronometro
     var seconds = parseInt(secondsInzialiInStringa);
@@ -381,7 +384,9 @@ function playMusic() {
 
     function upDateCountUp() {
       //far partire animazione
-      scorrimentoTempo.style.webkitAnimationPlayState = 'running';
+      document.querySelectorAll(
+        '.scorrimento-tempo'
+      )[0].style.webkitAnimationPlayState = 'running';
       // motore del cronometro
       var minutes = Math.floor(seconds / 60);
       moduloSeconds = seconds % 60;
@@ -394,6 +399,10 @@ function playMusic() {
       if (seconds < 68) {
         seconds++;
       }
+      //   azzerare secondi se premuto tasto "redo"
+      btnRedo.addEventListener('click', () => {
+        seconds = 0;
+      });
       //  bloccare
       var pause = document.querySelector('#pause');
       pause.addEventListener('click', () => {
@@ -402,7 +411,9 @@ function playMusic() {
           pauseLi.style.display = 'none';
           playLi.style.display = 'block';
           //   bloccare animazione
-          scorrimentoTempo.style.webkitAnimationPlayState = 'paused';
+          document.querySelectorAll(
+            '.scorrimento-tempo'
+          )[0].style.webkitAnimationPlayState = 'paused';
           //   stoppare cronometro
           clearInterval(int);
         }
@@ -410,3 +421,61 @@ function playMusic() {
     }
   }
 }
+
+// far funzionare tasto avanti
+var btnAvanti = document.querySelector('#btnAvanti');
+
+btnAvanti.addEventListener('click', () => {
+  if (titleBranoSottoSx.innerText == 'Stranger Things') {
+    quiet();
+  } else if (titleBranoSottoSx.innerText == 'A quiet place') {
+    split();
+  } else if (titleBranoSottoSx.innerText == 'split') {
+    cure();
+  } else if (titleBranoSottoSx.innerText == 'A cure for wellness') {
+    sinister();
+  } else if (titleBranoSottoSx.innerText == 'Sinister') {
+    radar();
+  } else if (titleBranoSottoSx.innerText == 'Release Radar') {
+    mix();
+  } else if (titleBranoSottoSx.innerText == 'Daily Mix 1') {
+    metal();
+  } else {
+    stranger();
+  }
+});
+
+// far funzionare tasto indietro
+var btnIndietro = document.querySelector('#btnIndietro');
+
+btnIndietro.addEventListener('click', () => {
+  if (titleBranoSottoSx.innerText == 'Stranger Things') {
+    metal();
+  } else if (titleBranoSottoSx.innerText == 'A quiet place') {
+    stranger();
+  } else if (titleBranoSottoSx.innerText == 'split') {
+    quiet();
+  } else if (titleBranoSottoSx.innerText == 'A cure for wellness') {
+    split();
+  } else if (titleBranoSottoSx.innerText == 'Sinister') {
+    cure();
+  } else if (titleBranoSottoSx.innerText == 'Release Radar') {
+    sinister();
+  } else if (titleBranoSottoSx.innerText == 'Daily Mix 1') {
+    radar();
+  } else {
+    mix();
+  }
+});
+
+// far funzionare tasto da capo (btnRedo a riga 363)
+var avanzamentoTempoBarra = document.querySelector('#scorrimentoTempo');
+
+btnRedo.addEventListener('click', () => {
+  avanzamentoTempoBarra.classList.remove('scorrimento-tempo');
+  setTimeout(function () {
+    avanzamentoTempoBarra.classList.add('scorrimento-tempo');
+    secondiPassati.innerText = '0:00';
+    things.currentTime = 0;
+  }, 1);
+});
