@@ -136,6 +136,11 @@ pallino che si crea in fondo */
     width: 100%;
   }
 }
+/* colorare audio all'hover */
+footer .progression-audio:hover .scorrimento-audio {
+  background-color: #a1ed2e;
+}
+
 .pallino {
   left: 100%;
   top: 50%;
