@@ -23,7 +23,7 @@
       <div class="wrap-all-but-footer flex">
         <!-- ****** -->
         <!-- ASIDE -->
-        <aside class="w40px h100 black-color-bg flex-y space-between py-8">
+        <aside class="w40px h100 black-color-bg flex-y space-between py-10">
           <!-- MENU IN VERSIONE MOBILE -->
           <!-- icone in alto -->
           <div
@@ -64,17 +64,21 @@
             <li>
               <a
                 href="#"
-                class="profile-wrap grey-color-bg w27px h30px flex-xy-center border-rad50"
+                class="flex-xy-center profile-wrap w27px h30px flex-xy-center"
               >
-                <img src="img/profile.svg" alt="profile" class="w20px" />
+                <img
+                  src="img/io2.JPG"
+                  alt="profile"
+                  class="w22px border-rad50"
+                />
               </a>
             </li>
           </ul>
           <!-- MENU VERSIONE DA SCHERMI M IN SU -->
-          <div class="upper-mobile-wrapper flex-y space-between h100 pt-8">
+          <div class="upper-mobile-wrapper flex-y space-between">
             <!-- logo da m in su -->
             <div class="biglogo-wrapper w100 flex-xy-center">
-              <img src="img/logo.svg" alt="logo-big" class="w57" />
+              <img src="img/logo.svg" alt="logo-big" class="w57 pt-16" />
             </div>
             <!-- wrapper della parte alta -->
             <div class="logoHomePlaylist-wraper h89 align-items-center">
@@ -96,7 +100,7 @@
                         alt="home"
                         class="vertical-middle w33px pl-9"
                       />
-                      <span class="in-line-b pl-5"> Home </span>
+                      <span class="inline-b pl-5"> Home </span>
                     </div>
                   </a>
                 </li>
@@ -116,7 +120,7 @@
                         alt="cerca"
                         class="vertical-middle w33px pl-9"
                       />
-                      <span class="in-line-b pl-5"> Cerca </span>
+                      <span class="inline-b pl-5"> Cerca </span>
                     </div>
                   </a>
                 </li>
@@ -136,13 +140,13 @@
                         alt="libreria"
                         class="vertical-middle w33px pl-9"
                       />
-                      <span class="in-line-b pl-5"> La tua libreria </span>
+                      <span class="inline-b pl-5"> La tua libreria </span>
                     </div>
                   </a>
                 </li>
               </ul>
               <!-- wrapper playlist  -->
-              <div class="w100 mt-8 h80">
+              <div class="w100 mt-8">
                 <h5
                   class="text-align-left uppercase fff-color pl-13 pb-8 font-s08rem"
                 >
@@ -168,8 +172,8 @@
             </div>
           </div>
           <!-- icone sotto aside in versione da m in poi -->
-          <div class="pos-abs position-profile w14 ml-13">
-            <div class="instalApProfile-wrap w100 h11">
+          <div class="position-profile ml-13 pb-9">
+            <div class="instalApProfile-wrap">
               <a href="#" class="no-decorate grey-txt font-s08rem h10px">
                 <img
                   src="img/download.svg"
@@ -180,20 +184,18 @@
               <!-- linea (horizontal rule) tra istalla e avatar profilo -->
               <div class="line h1px w80 grey-color-bg border-rad2 my-11"></div>
               <!-- avatar e nome profilo -->
-              <a href="#" class="in-line-b w100 pos-rel"
-                ><div
-                  class="pos-rel grey-color-bg w22px h22px flex-xy-center border-rad50"
-                >
+              <a href="#" class="inline-b w100 pos-rel"
+                ><div class="pos-rel w23px h23px border-rad50 overflow-hidden">
                   <img
-                    src="img/profile.svg"
+                    src="img/io2.JPG"
                     alt="profile"
-                    class="w15px center-of-abs"
+                    class="w100 center-of-abs"
                   />
                 </div>
                 <h5
-                  class="profile-name in-line-b no-decorate fff-color centerY-of-abs ml-6"
+                  class="profile-name inline-b no-decorate fff-color centerY-of-abs ml-6"
                 >
-                  John Doe
+                  Marco Milza
                 </h5>
               </a>
             </div>
@@ -206,19 +208,19 @@
             class="flex justify-end align-items-center top0-left0-of-abs w100 h75px secondary-color-bg p-10"
           >
             <button
-              class="fff-color border-1px secondary-color-bg font-s06rem border-rad30 pl-32 pr-32 pt-11 pb-11 cursor-pointer"
+              class="z-index-10 fff-color border-1px transparent-bg font-s06rem border-rad30 pl-32 pr-32 pt-11 pb-11 cursor-pointer"
             >
               EFFETTUA L'UPGRADE
             </button>
           </header>
           <!-- ****** -->
           <!-- MAIN-->
-          <main class="h100 primary-color-bg pl-23 pr-10 pt-83">
+          <main class="overflow-y-auto h100 primary-color-bg pl-15 pr-10 pt-83">
             <!-- contenitore titoli da in evidenza a scopri -->
             <ul
-              class="txt-center no-list-style font-s08rem font-w600 w100 pb-3 z-index-20"
+              class="txt-center no-list-style font-s08rem font-w600 w100 pb-10 z-index-20"
             >
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -230,7 +232,7 @@
                   ></div>
                 </a>
               </li>
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -242,7 +244,7 @@
                   ></div>
                 </a>
               </li>
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -254,7 +256,7 @@
                   ></div>
                 </a>
               </li>
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -266,7 +268,7 @@
                   ></div>
                 </a>
               </li>
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -278,7 +280,7 @@
                   ></div>
                 </a>
               </li>
-              <li class="in-line-b p-7">
+              <li class="inline-b p-7">
                 <a
                   href="#"
                   class="no-decorate flex-y align-items-center space-between h20px grey-txt hover-fff-color pos-rel"
@@ -292,7 +294,7 @@
               </li>
             </ul>
             <!-- parte con gallery dei brani vera e porpria -->
-            <div class="overflow-y-auto h93 pb-40">
+            <div class="h93">
               <!-- titolo di riga Recently Played-->
               <div class="row flex wrap pt-42">
                 <!-- immagine 1 heavy metal -->
@@ -462,7 +464,7 @@
                   </div>
                 </div>
               </div>
-              <!-- FILA CREATO PER JOHN DOE -->
+              <!-- FILA CREATO PER Marco Milza -->
               <div class="row flex wrap pt-83">
                 <!-- immagine 1 release radar -->
                 <div class="col-l-2 col-m-3 col-6">
@@ -471,7 +473,7 @@
                       <!-- wrapper del titolo e sottotitolo seconda linea -->
                       <div class="titles-in-main-row2 pos-abs w330px">
                         <h2 class="fff-color">
-                          Creato per Jhon Doe
+                          Creato per Marco Milza
                           <p class="pb-12 font-s08rem grey-txt">
                             Più ascoliti, più accurati saranno i suggerimenti
                           </p>
@@ -652,7 +654,7 @@
                   <i class="fas fa-caret-left font-s1e5rem pos-rel">
                     <!-- linea verticale a sx del sinbolo per mandare indietro il brano -->
                     <span
-                      class="in-line-b pos-abs w3px h14px fff-color-bg"
+                      class="inline-b pos-abs w3px h14px fff-color-bg"
                     ></span> </i
                 ></a>
               </li>
@@ -677,7 +679,7 @@
                   <i class="fas fa-caret-right font-s1e5rem pos-rel">
                     <!-- linea vertivale a dx del sinbolo per mandare avanti il brano -->
                     <span
-                      class="in-line-b pos-abs w3px h14px fff-color-bg"
+                      class="inline-b pos-abs w3px h14px fff-color-bg"
                     ></span> </i
                 ></a>
               </li>

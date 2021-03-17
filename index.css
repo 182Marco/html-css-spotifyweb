@@ -15,6 +15,12 @@ di qualche pixel dalle immagini stesse */
 main img {
   display: block;
 }
+main img {
+  transition: 0.2s;
+}
+main img:hover {
+  transform: scale(1.02);
+}
 main .titles-in-main {
   bottom: 97%;
   left: 0;
@@ -64,6 +70,9 @@ m in su su mobile */
 .instalApProfile-wrap {
   display: none;
 }
+aside .position-profile {
+  display: none;
+}
 /* stili  della lista di playlist (no classi di
 riutilizzo per mettere create element in js
 seza dover attribuire troppe classi)*/
@@ -87,11 +96,12 @@ aside #newPlaylistUl a:hover {
 aside .fa-plus {
   background-color: #a3a3a3;
 }
-/* contenitore in basso aside
-(installa app e profilo) */
-aside .position-profile {
-  bottom: 10%;
-  left: 0;
+/* linea tra istalla e avatar profilo
+(essere larghi al 100% lasciando a destra
+lo stesso margine sx che ha il contenitore
+della linea)  */
+aside .instalApProfile-wrap .line {
+  width: calc(100% - 15px);
 }
 /* HEADER BOTTON */
 header button {
@@ -176,6 +186,9 @@ footer .progression-audio:hover .pallino.audio {
   e sotto da dimensione m */
   .upper-mobile-wrapper {
     display: flex;
+  }
+  aside .position-profile {
+    display: block;
   }
 
   .instalApProfile-wrap {

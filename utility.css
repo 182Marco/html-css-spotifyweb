@@ -85,6 +85,9 @@
 .red-bg {
   background-color: red;
 }
+.transparent-bg {
+  background-color: transparent;
+}
 /* hover */
 .hover-brand-color-bg:hover {
   background-color: #a1ed2e;
@@ -191,7 +194,7 @@
 .block {
   display: block;
 }
-.in-line-b {
+.inline-b {
   display: inline-block;
 }
 .display-block {
