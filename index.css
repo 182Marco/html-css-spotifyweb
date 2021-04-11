@@ -146,6 +146,31 @@ pallino che si crea in fondo */
     width: 100%;
   }
 }
+
+/* FOOTER */
+/* posizione cuore e cartella assoluta in modo da non essere spinta
+a dx e sx a seconda di che titolo c'è nel box in basso a sx  */
+footer .heartFolder-wrap {
+  position: absolute;
+  bottom: 3.3%;
+  left: 31%;
+  width: 50px;
+}
+@media screen and (min-width: 600px) {
+  footer .heartFolder-wrap {
+    left: 30%;
+    bottom: 3.3%;
+    /* su chermi larghi le icone tornano in linea */
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer .heartFolder-wrap {
+    left: 22%;
+    bottom: 2%;
+    flex-direction: row;
+  }
+}
 /* colorare audio all'hover */
 footer .progression-audio:hover .scorrimento-audio {
   background-color: #a1ed2e;
