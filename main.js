@@ -281,58 +281,104 @@ for (let i = 0; i < mixLinksNodeList.length; i++) {
   }
 }
 
-// far funzionare tasto random
-var lastNumber;
-document.querySelector('#btnRandom').addEventListener('click', () => {
-  var x = Math.floor(Math.random() * 8);
-  /*   la nidificazione di if serve a rendere altamente
-improbabile che venga sorteggiato lo stesso numero
-cosichè l'utente al click del random non rimanga mai
- sul brano precedente */
-  if (x == lastNumber) {
-    var x = Math.floor(Math.random() * 8);
-    if (x == lastNumber) {
-      var x = Math.floor(Math.random() * 8);
-      if (x == lastNumber) {
-        var x = Math.floor(Math.random() * 8);
-      } else {
-        asign();
-      }
-    } else {
-      asign();
-    }
-  } else {
-    asign();
-  }
-  //   ******************
-  function asign() {
-    /* evitare che il numero casuale sorteggiato porti la stessa
-     canzone di quella di defaul al caricamento dopo il primo click */
-    if (x == 0 && titleBranoSottoSx.innerText != 'Stranger Things') {
+/* VECCHIA SINTASSI CHE HO USATO PER BTN RANDOM -> LASCIATA PER RICORDO (VEDERE L'EVOLUZIONE)
+SENZA SKILL DEL CICLO DO WHILE HO DOVUTO NESTARE 3 IF PER NON AVERE LO STESSO NUMERO -> 
+(IL CHE TRA L'ALTRO EVITAVA IL PROBLMA NON IN MODO ASSOLUTO MA RENDENDOLO INPROBABILE) */
+
+// // far funzionare tasto random
+// var lastNumber;
+// document.querySelector('#btnRandom').addEventListener('click', () => {
+//   var x = Math.floor(Math.random() * 8);
+//   /*   la nidificazione di if serve a rendere altamente
+// improbabile che venga sorteggiato lo stesso numero
+// cosichè l'utente al click del random non rimanga mai
+//  sul brano precedente */
+//   if (x == lastNumber) {
+//     var x = Math.floor(Math.random() * 8);
+//     if (x == lastNumber) {
+//       var x = Math.floor(Math.random() * 8);
+//       if (x == lastNumber) {
+//         var x = Math.floor(Math.random() * 8);
+//       } else {
+//         asign();
+//       }
+//     } else {
+//       asign();
+//     }
+//   } else {
+//     asign();
+//   }
+//   //   ******************
+//   function asign() {
+//     /* evitare che il numero casuale sorteggiato porti la stessa
+//      canzone di quella di defaul al caricamento dopo il primo click */
+//     if (x == 0 && titleBranoSottoSx.innerText != 'Stranger Things') {
+//       stranger();
+//     } else if (x == 0 && titleBranoSottoSx.innerText == 'Stranger Things') {
+//       /* se siamo al primo giro decido altra canzone e attribuisco numero associato
+//          a last number per evitare che possa essere chiamata la stessa al click dopo */
+//       quiet();
+//       lastNumber = 6;
+//     } else if (x == 1) {
+//       mix();
+//     } else if (x == 2) {
+//       radar();
+//     } else if (x == 3) {
+//       sinister();
+//     } else if (x == 4) {
+//       cure();
+//     } else if (x == 5) {
+//       split();
+//     } else if (x == 6) {
+//       quiet();
+//     } else {
+//       metal();
+//     }
+//     lastNumber = x;
+//   }
+// });
+
+// FUNZIONAMENTO BTN RANDOM
+var lastNumber = 0;
+btnRandom = document.querySelector('#btnRandom');
+btnRandom.addEventListener('click', () => {
+  do {
+    var newNum = genNumRandom(0, 7);
+    // impedire che esca numero associato alla song di prima
+  } while (newNum == lastNumber);
+  // ricordarsi del numero che è uscito -> non ripetere nel giro dopo
+  lastNumber = newNum;
+  // A seconda del numero uscito chiamare una funcione
+  switch (newNum) {
+    case 0:
       stranger();
-    } else if (x == 0 && titleBranoSottoSx.innerText == 'Stranger Things') {
-      /* se siamo al primo giro decido altra canzone e attribuisco numero associato
-         a last number per evitare che possa essere chiamata la stessa al click dopo */
-      quiet();
-      lastNumber = 6;
-    } else if (x == 1) {
+      break;
+    case 1:
       mix();
-    } else if (x == 2) {
+      break;
+    case 2:
       radar();
-    } else if (x == 3) {
+      break;
+    case 3:
       sinister();
-    } else if (x == 4) {
+      break;
+    case 4:
       cure();
-    } else if (x == 5) {
+      break;
+    case 5:
       split();
-    } else if (x == 6) {
+      break;
+    case 6:
       quiet();
-    } else {
+      break;
+    case 7:
       metal();
-    }
-    lastNumber = x;
   }
 });
+// funzione di riutilizzo che genera numeri random con parametro min e max
+function genNumRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 // tener bloccata progressione
 var scorrimentoTempo = document.querySelectorAll('.scorrimento-tempo')[0];
